@@ -4,7 +4,7 @@
         <div class="px-4 md:px-10 2xl:px-24 py-6 lg:py-0">
             <div class="flex items-center lg:relative">
                 <div class="w-6/12 lg:w-2/12">
-                    <div class="logo"><a href="index.html"><img src="{{ asset("images/logo/logo.png")}} " alt="logo" loading="lazy" width="125" height="45" /></a></div>
+                    <div class="logo"><a href="{{ \URL::to('/')}}"><img src="{{ asset("images/logo/logo.png")}} " alt="logo" loading="lazy" width="125" height="45" /></a></div>
                 </div>
                 <div class="hidden lg:flex flex-1 xl:relative">
                     <nav class="main-menu">
@@ -50,23 +50,39 @@
                             @if (Route::has('login'))
                                 <div id="settings-card" class="bg-white absolute right-0 px-8 py-5 shadow w-80 opacity-0 invisible transition-all duration-300 ease-in-out z-20">
                                     <h4 class="text-md text-dark font-normal capitalize tracking-wide pb-5 border-b border-solid border-gray-600 mb-5">Account</h4>
-                                    <ul>
-                                        @auth
-                                            <li class="my-4">
-                                                <a href="{{ route('logout') }}" class="text-base text-dark hover:text-orange transition-all font-light capitalize tracking-wide">
-
-                                                    {{ __('Logout') }}
-                                                </a>
-                                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                                    @csrf
-                                                </form>
-                                            </li>
-                                            @else
-                                            <li class="my-4"><a href="{{ route('login') }}" class="text-base text-dark hover:text-orange transition-all font-light capitalize tracking-wide">Login</a></li>
-                                            @if (Route::has('register'))
-                                            <li class="mt-4"><a href="{{ route('register') }}" class="text-base text-dark hover:text-orange transition-all font-light capitalize tracking-wide">Create Account</a></li>
+                                    <ul class="navbar-nav ms-auto">
+                                        <!-- Authentication Links -->
+                                        @guest
+                                            @if (Route::has('login'))
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                                </li>
                                             @endif
-                                        @endauth
+                
+                                            @if (Route::has('register'))
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                                </li>
+                                            @endif
+                                        @else
+                                            <li class="nav-item dropdown">
+                                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                                    {{ Auth::user()->name }}
+                                                </a>
+                
+                                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                                       onclick="event.preventDefault();
+                                                                     document.getElementById('logout-form').submit();">
+                                                        {{ __('Logout') }}
+                                                    </a>
+                
+                                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                        @csrf
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        @endguest
                                     </ul>
                                 </div>  
                             @endif
