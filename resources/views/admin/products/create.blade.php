@@ -1,8 +1,8 @@
-@extends('layoutS.app')
+@extends('layouts.app')
 
 @section('content')
-<x-admin.layouts.header />
-<x-admin.layouts.side-bar />
+    <x-admin.layouts.header />
+    <x-admin.layouts.side-bar />
     <!-- Left Sidebar End -->
 
     <!-- ============================================================== -->
@@ -39,8 +39,8 @@
 
                                 @isset($product)
                                     <form class="form-horizontal" method="POST"
-                                        action="{{ route('products.update', ['product' => $product]) }}" enctype="multipart/form-data"
-                                        class="row g-3">
+                                        action="{{ route('products.update', ['product' => $product]) }}"
+                                        enctype="multipart/form-data" class="row g-3">
                                         @method('patch')
                                         @csrf
                                     @else
@@ -48,7 +48,7 @@
                                             enctype="multipart/form-data" method="POST">
                                             @csrf
                                         @endisset
-                                        
+
                                         <div class="form-group row">
                                             <div class="col-sm-7">
                                                 <strong>Name:</strong>
@@ -67,7 +67,7 @@
                                             <div class="col-sm">
                                                 <strong>Price:</strong>
                                                 <input type="number" class="form-control"
-                                                    value="{{ isset($product) ? $product->price: old('price') }}"
+                                                    value="{{ isset($product) ? $product->price : old('price') }}"
                                                     name="price" id="validationDefaultUsername"
                                                     aria-describedby="inputGroupPrepend2" placeholder="Price" required>
                                             </div>

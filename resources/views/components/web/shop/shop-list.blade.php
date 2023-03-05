@@ -5,7 +5,9 @@
                 <div class="col-span-12">
                     <nav>
                         <ul class="flex flex-wrap items-center justify-center">
-                            <li class="mr-5"><a href="index.html" class="text-dark font-medium text-base uppercase transition-all hover:text-orange relative before:w-5 before:h-1px before:empty before:absolute before:top-3 before:bg-dark before:transform before:rotate-115 before:-right-5">Home</a></li>
+                            <li class="mr-5"><a href="index.html"
+                                    class="text-dark font-medium text-base uppercase transition-all hover:text-orange relative before:w-5 before:h-1px before:empty before:absolute before:top-3 before:bg-dark before:transform before:rotate-115 before:-right-5">Home</a>
+                            </li>
                             <li class="text-dark font-medium text-base uppercase mr-5">shop-grid-4-column</li>
                         </ul>
                     </nav>
@@ -53,8 +55,11 @@
                         </div>
                         <div>
                             <ul class="shop-tab-nav flex flex-wrap">
-                                <li><a href="#grid" class="text-base hover:text-orange inline-block py-2 px-2"><i class="icon-grid"></i></a></li>
-                                <li class="active"><a href="#list" class="text-base hover:text-orange inline-block py-2 px-2 ml-5"><i class="icon-menu"></i></a></li>
+                                <li><a href="#grid" class="text-base hover:text-orange inline-block py-2 px-2"><i
+                                            class="icon-grid"></i></a></li>
+                                <li class="active"><a href="#list"
+                                        class="text-base hover:text-orange inline-block py-2 px-2 ml-5"><i
+                                            class="icon-menu"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -63,359 +68,518 @@
                         <div id="grid" class="shop-tab-content">
                             <div class="flex flex-wrap -my-4 -px-4">
 
+                               
+
                                 <div class="w-full md:w-1/2 lg:w-1/3 2xl:w-1/4 px-4 my-4">
-                                    <div class="border border-solid border-gray-300 transition-all hover:shadow-product group">
+                                    <div
+                                        class="border border-solid border-gray-300 transition-all hover:shadow-product group">
                                         <div class="relative overflow-hidden">
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 left-3">New</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
-                                            <img class="w-full h-full" src="{{ asset('images/products/lg/b17.jpg')}} " alt="product image" loading="lazy" width="432" height="480" />
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 left-3">New</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
+                                            <img class="w-full h-full" src="{{ asset('images/products/lg/b17.jpg') }} "
+                                                alt="product image" loading="lazy" width="432" height="480" />
                                             <!-- actions start -->
-                    
-                                            <div class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
-                                                <ul class="flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden">
+
+                                            <div
+                                                class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
+                                                <ul
+                                                    class="flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden">
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="#modal-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle" data-tippy-content="Quick View" aria-label="Quick View">
+                                                        <a href="#modal-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle"
+                                                            data-tippy-content="Quick View" aria-label="Quick View">
                                                             <i class="icon-magnifier"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="whishlist.html" class="text-dark flex items-center justify-center text-md hover:text-orange" data-tippy-content="Add to wishlist" aria-label="wishlist">
+                                                        <a href="whishlist.html"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange"
+                                                            data-tippy-content="Add to wishlist" aria-label="wishlist">
                                                             <i class="icon-heart"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="compare.html" class="text-dark flex items-center justify-center text-md hover:text-orange" data-tippy-content="Compare" aria-label="Compare">
+                                                        <a href="compare.html"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange"
+                                                            data-tippy-content="Compare" aria-label="Compare">
                                                             <i class="icon-refresh"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 pr-7 md:py-5 md:pl-8 md:pr-8">
-                                                        <a href="#modal-addto-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle" aria-label="add to cart" data-tippy-content="Add to cart">
+                                                        <a href="#modal-addto-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle"
+                                                            aria-label="add to cart" data-tippy-content="Add to cart">
                                                             <i class="icon-bag"></i>
                                                         </a>
                                                     </li>
                                                 </ul>
                                             </div>
-                    
+
                                             <!-- actions end -->
                                         </div>
-                    
+
                                         <div class="py-5 px-4">
-                                            <h3><a class="block text-base hover:text-orange transition-all" href="#">Airpod shortcode product</a></h3>
-                                            <h4 class="font-bold text-md leading-none text-orange mt-3"><del class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00</h4>
+                                            <h3><a class="block text-base hover:text-orange transition-all"
+                                                    href="#">Airpod shortcode product</a></h3>
+                                            <h4 class="font-bold text-md leading-none text-orange mt-3"><del
+                                                    class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00
+                                            </h4>
                                         </div>
                                     </div>
                                 </div>
-                    
+
                                 <div class="w-full md:w-1/2 lg:w-1/3 2xl:w-1/4 px-4 my-4">
-                                    <div class="border border-solid border-gray-300 transition-all hover:shadow-product group">
+                                    <div
+                                        class="border border-solid border-gray-300 transition-all hover:shadow-product group">
                                         <div class="relative overflow-hidden">
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 left-3">New</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
-                                            <img class="w-full h-full" src="{{ asset('images/products/lg/b17.jpg')}} " alt="product image" loading="lazy" width="432" height="480" />
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 left-3">New</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
+                                            <img class="w-full h-full" src="{{ asset('images/products/lg/b17.jpg') }} "
+                                                alt="product image" loading="lazy" width="432" height="480" />
                                             <!-- actions start -->
-                    
-                                            <div class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
-                                                <ul class="flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden">
+
+                                            <div
+                                                class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
+                                                <ul
+                                                    class="flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden">
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="#modal-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle" data-tippy-content="Quick View" aria-label="Quick View">
+                                                        <a href="#modal-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle"
+                                                            data-tippy-content="Quick View" aria-label="Quick View">
                                                             <i class="icon-magnifier"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="whishlist.html" class="text-dark flex items-center justify-center text-md hover:text-orange" data-tippy-content="Add to wishlist" aria-label="wishlist">
+                                                        <a href="whishlist.html"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange"
+                                                            data-tippy-content="Add to wishlist"
+                                                            aria-label="wishlist">
                                                             <i class="icon-heart"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="compare.html" class="text-dark flex items-center justify-center text-md hover:text-orange" data-tippy-content="Compare" aria-label="Compare">
+                                                        <a href="compare.html"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange"
+                                                            data-tippy-content="Compare" aria-label="Compare">
                                                             <i class="icon-refresh"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 pr-7 md:py-5 md:pl-8 md:pr-8">
-                                                        <a href="#modal-addto-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle" aria-label="add to cart" data-tippy-content="Add to cart">
+                                                        <a href="#modal-addto-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle"
+                                                            aria-label="add to cart" data-tippy-content="Add to cart">
                                                             <i class="icon-bag"></i>
                                                         </a>
                                                     </li>
                                                 </ul>
                                             </div>
-                    
+
                                             <!-- actions end -->
                                         </div>
-                    
+
                                         <div class="py-5 px-4">
-                                            <h3><a class="block text-base hover:text-orange transition-all" href="#">Airpod shortcode product</a></h3>
-                                            <h4 class="font-bold text-md leading-none text-orange mt-3"><del class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00</h4>
+                                            <h3><a class="block text-base hover:text-orange transition-all"
+                                                    href="#">Airpod shortcode product</a></h3>
+                                            <h4 class="font-bold text-md leading-none text-orange mt-3"><del
+                                                    class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00
+                                            </h4>
                                         </div>
                                     </div>
                                 </div>
-                    
+
                                 <div class="w-full md:w-1/2 lg:w-1/3 2xl:w-1/4 px-4 my-4">
-                                    <div class="border border-solid border-gray-300 transition-all hover:shadow-product group">
+                                    <div
+                                        class="border border-solid border-gray-300 transition-all hover:shadow-product group">
                                         <div class="relative overflow-hidden">
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 left-3">New</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
-                                            <img class="w-full h-full" src="{{ asset('images/products/lg/b17.jpg')}} " alt="product image" loading="lazy" width="432" height="480" />
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 left-3">New</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
+                                            <img class="w-full h-full"
+                                                src="{{ asset('images/products/lg/b17.jpg') }} " alt="product image"
+                                                loading="lazy" width="432" height="480" />
                                             <!-- actions start -->
-                    
-                                            <div class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
-                                                <ul class="flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden">
+
+                                            <div
+                                                class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
+                                                <ul
+                                                    class="flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden">
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="#modal-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle" data-tippy-content="Quick View" aria-label="Quick View">
+                                                        <a href="#modal-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle"
+                                                            data-tippy-content="Quick View" aria-label="Quick View">
                                                             <i class="icon-magnifier"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="whishlist.html" class="text-dark flex items-center justify-center text-md hover:text-orange" data-tippy-content="Add to wishlist" aria-label="wishlist">
+                                                        <a href="whishlist.html"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange"
+                                                            data-tippy-content="Add to wishlist"
+                                                            aria-label="wishlist">
                                                             <i class="icon-heart"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="compare.html" class="text-dark flex items-center justify-center text-md hover:text-orange" data-tippy-content="Compare" aria-label="Compare">
+                                                        <a href="compare.html"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange"
+                                                            data-tippy-content="Compare" aria-label="Compare">
                                                             <i class="icon-refresh"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 pr-7 md:py-5 md:pl-8 md:pr-8">
-                                                        <a href="#modal-addto-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle" aria-label="add to cart" data-tippy-content="Add to cart">
+                                                        <a href="#modal-addto-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle"
+                                                            aria-label="add to cart" data-tippy-content="Add to cart">
                                                             <i class="icon-bag"></i>
                                                         </a>
                                                     </li>
                                                 </ul>
                                             </div>
-                    
+
                                             <!-- actions end -->
                                         </div>
-                    
+
                                         <div class="py-5 px-4">
-                                            <h3><a class="block text-base hover:text-orange transition-all" href="#">Airpod shortcode product</a></h3>
-                                            <h4 class="font-bold text-md leading-none text-orange mt-3"><del class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00</h4>
+                                            <h3><a class="block text-base hover:text-orange transition-all"
+                                                    href="#">Airpod shortcode product</a></h3>
+                                            <h4 class="font-bold text-md leading-none text-orange mt-3"><del
+                                                    class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00
+                                            </h4>
                                         </div>
                                     </div>
                                 </div>
-                    
+
                                 <div class="w-full md:w-1/2 lg:w-1/3 2xl:w-1/4 px-4 my-4">
-                                    <div class="border border-solid border-gray-300 transition-all hover:shadow-product group">
+                                    <div
+                                        class="border border-solid border-gray-300 transition-all hover:shadow-product group">
                                         <div class="relative overflow-hidden">
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 left-3">New</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
-                                            <img class="w-full h-full" src="{{ asset('images/products/lg/b17.jpg')}} " alt="product image" loading="lazy" width="432" height="480" />
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 left-3">New</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
+                                            <img class="w-full h-full"
+                                                src="{{ asset('images/products/lg/b17.jpg') }} " alt="product image"
+                                                loading="lazy" width="432" height="480" />
                                             <!-- actions start -->
-                    
-                                            <div class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
-                                                <ul class="flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden">
+
+                                            <div
+                                                class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
+                                                <ul
+                                                    class="flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden">
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="#modal-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle" data-tippy-content="Quick View" aria-label="Quick View">
+                                                        <a href="#modal-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle"
+                                                            data-tippy-content="Quick View" aria-label="Quick View">
                                                             <i class="icon-magnifier"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="whishlist.html" class="text-dark flex items-center justify-center text-md hover:text-orange" data-tippy-content="Add to wishlist" aria-label="wishlist">
+                                                        <a href="whishlist.html"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange"
+                                                            data-tippy-content="Add to wishlist"
+                                                            aria-label="wishlist">
                                                             <i class="icon-heart"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="compare.html" class="text-dark flex items-center justify-center text-md hover:text-orange" data-tippy-content="Compare" aria-label="Compare">
+                                                        <a href="compare.html"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange"
+                                                            data-tippy-content="Compare" aria-label="Compare">
                                                             <i class="icon-refresh"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 pr-7 md:py-5 md:pl-8 md:pr-8">
-                                                        <a href="#modal-addto-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle" aria-label="add to cart" data-tippy-content="Add to cart">
+                                                        <a href="#modal-addto-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle"
+                                                            aria-label="add to cart" data-tippy-content="Add to cart">
                                                             <i class="icon-bag"></i>
                                                         </a>
                                                     </li>
                                                 </ul>
                                             </div>
-                    
+
                                             <!-- actions end -->
                                         </div>
-                    
+
                                         <div class="py-5 px-4">
-                                            <h3><a class="block text-base hover:text-orange transition-all" href="#">Airpod shortcode product</a></h3>
-                                            <h4 class="font-bold text-md leading-none text-orange mt-3"><del class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00</h4>
+                                            <h3><a class="block text-base hover:text-orange transition-all"
+                                                    href="#">Airpod shortcode product</a></h3>
+                                            <h4 class="font-bold text-md leading-none text-orange mt-3"><del
+                                                    class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00
+                                            </h4>
                                         </div>
                                     </div>
                                 </div>
-                    
+
                                 <div class="w-full md:w-1/2 lg:w-1/3 2xl:w-1/4 px-4 my-4">
-                                    <div class="border border-solid border-gray-300 transition-all hover:shadow-product group">
+                                    <div
+                                        class="border border-solid border-gray-300 transition-all hover:shadow-product group">
                                         <div class="relative overflow-hidden">
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 left-3">New</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
-                                            <img class="w-full h-full" src="{{ asset('images/products/lg/b17.jpg')}} " alt="product image" loading="lazy" width="432" height="480" />
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 left-3">New</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
+                                            <img class="w-full h-full"
+                                                src="{{ asset('images/products/lg/b17.jpg') }} " alt="product image"
+                                                loading="lazy" width="432" height="480" />
                                             <!-- actions start -->
-                    
-                                            <div class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
-                                                <ul class="flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden">
+
+                                            <div
+                                                class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
+                                                <ul
+                                                    class="flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden">
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="#modal-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle" data-tippy-content="Quick View" aria-label="Quick View">
+                                                        <a href="#modal-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle"
+                                                            data-tippy-content="Quick View" aria-label="Quick View">
                                                             <i class="icon-magnifier"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="whishlist.html" class="text-dark flex items-center justify-center text-md hover:text-orange" data-tippy-content="Add to wishlist" aria-label="wishlist">
+                                                        <a href="whishlist.html"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange"
+                                                            data-tippy-content="Add to wishlist"
+                                                            aria-label="wishlist">
                                                             <i class="icon-heart"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="compare.html" class="text-dark flex items-center justify-center text-md hover:text-orange" data-tippy-content="Compare" aria-label="Compare">
+                                                        <a href="compare.html"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange"
+                                                            data-tippy-content="Compare" aria-label="Compare">
                                                             <i class="icon-refresh"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 pr-7 md:py-5 md:pl-8 md:pr-8">
-                                                        <a href="#modal-addto-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle" aria-label="add to cart" data-tippy-content="Add to cart">
+                                                        <a href="#modal-addto-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle"
+                                                            aria-label="add to cart" data-tippy-content="Add to cart">
                                                             <i class="icon-bag"></i>
                                                         </a>
                                                     </li>
                                                 </ul>
                                             </div>
-                    
+
                                             <!-- actions end -->
                                         </div>
-                    
+
                                         <div class="py-5 px-4">
-                                            <h3><a class="block text-base hover:text-orange transition-all" href="#">Airpod shortcode product</a></h3>
-                                            <h4 class="font-bold text-md leading-none text-orange mt-3"><del class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00</h4>
+                                            <h3><a class="block text-base hover:text-orange transition-all"
+                                                    href="#">Airpod shortcode product</a></h3>
+                                            <h4 class="font-bold text-md leading-none text-orange mt-3"><del
+                                                    class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00
+                                            </h4>
                                         </div>
                                     </div>
                                 </div>
-                    
+
                                 <div class="w-full md:w-1/2 lg:w-1/3 2xl:w-1/4 px-4 my-4">
-                                    <div class="border border-solid border-gray-300 transition-all hover:shadow-product group">
+                                    <div
+                                        class="border border-solid border-gray-300 transition-all hover:shadow-product group">
                                         <div class="relative overflow-hidden">
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 left-3">New</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
-                                            <img class="w-full h-full" src="{{ asset('images/products/lg/b17.jpg')}} " alt="product image" loading="lazy" width="432" height="480" />
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 left-3">New</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
+                                            <img class="w-full h-full"
+                                                src="{{ asset('images/products/lg/b17.jpg') }} " alt="product image"
+                                                loading="lazy" width="432" height="480" />
                                             <!-- actions start -->
-                    
-                                            <div class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
-                                                <ul class="flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden">
+
+                                            <div
+                                                class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
+                                                <ul
+                                                    class="flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden">
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="#modal-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle" data-tippy-content="Quick View" aria-label="Quick View">
+                                                        <a href="#modal-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle"
+                                                            data-tippy-content="Quick View" aria-label="Quick View">
                                                             <i class="icon-magnifier"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="whishlist.html" class="text-dark flex items-center justify-center text-md hover:text-orange" data-tippy-content="Add to wishlist" aria-label="wishlist">
+                                                        <a href="whishlist.html"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange"
+                                                            data-tippy-content="Add to wishlist"
+                                                            aria-label="wishlist">
                                                             <i class="icon-heart"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="compare.html" class="text-dark flex items-center justify-center text-md hover:text-orange" data-tippy-content="Compare" aria-label="Compare">
+                                                        <a href="compare.html"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange"
+                                                            data-tippy-content="Compare" aria-label="Compare">
                                                             <i class="icon-refresh"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 pr-7 md:py-5 md:pl-8 md:pr-8">
-                                                        <a href="#modal-addto-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle" aria-label="add to cart" data-tippy-content="Add to cart">
+                                                        <a href="#modal-addto-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle"
+                                                            aria-label="add to cart" data-tippy-content="Add to cart">
                                                             <i class="icon-bag"></i>
                                                         </a>
                                                     </li>
                                                 </ul>
                                             </div>
-                    
+
                                             <!-- actions end -->
                                         </div>
-                    
+
                                         <div class="py-5 px-4">
-                                            <h3><a class="block text-base hover:text-orange transition-all" href="#">Airpod shortcode product</a></h3>
-                                            <h4 class="font-bold text-md leading-none text-orange mt-3"><del class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00</h4>
+                                            <h3><a class="block text-base hover:text-orange transition-all"
+                                                    href="#">Airpod shortcode product</a></h3>
+                                            <h4 class="font-bold text-md leading-none text-orange mt-3"><del
+                                                    class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00
+                                            </h4>
                                         </div>
                                     </div>
                                 </div>
-                    
+
                                 <div class="w-full md:w-1/2 lg:w-1/3 2xl:w-1/4 px-4 my-4">
-                                    <div class="border border-solid border-gray-300 transition-all hover:shadow-product group">
+                                    <div
+                                        class="border border-solid border-gray-300 transition-all hover:shadow-product group">
                                         <div class="relative overflow-hidden">
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 left-3">New</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
-                                            <img class="w-full h-full" src="{{ asset('images/products/lg/b17.jpg')}} " alt="product image" loading="lazy" width="432" height="480" />
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 left-3">New</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
+                                            <img class="w-full h-full"
+                                                src="{{ asset('images/products/lg/b17.jpg') }} " alt="product image"
+                                                loading="lazy" width="432" height="480" />
                                             <!-- actions start -->
-                    
-                                            <div class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
-                                                <ul class="flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden">
+
+                                            <div
+                                                class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
+                                                <ul
+                                                    class="flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden">
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="#modal-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle" data-tippy-content="Quick View" aria-label="Quick View">
+                                                        <a href="#modal-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle"
+                                                            data-tippy-content="Quick View" aria-label="Quick View">
                                                             <i class="icon-magnifier"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="whishlist.html" class="text-dark flex items-center justify-center text-md hover:text-orange" data-tippy-content="Add to wishlist" aria-label="wishlist">
+                                                        <a href="whishlist.html"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange"
+                                                            data-tippy-content="Add to wishlist"
+                                                            aria-label="wishlist">
                                                             <i class="icon-heart"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="compare.html" class="text-dark flex items-center justify-center text-md hover:text-orange" data-tippy-content="Compare" aria-label="Compare">
+                                                        <a href="compare.html"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange"
+                                                            data-tippy-content="Compare" aria-label="Compare">
                                                             <i class="icon-refresh"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 pr-7 md:py-5 md:pl-8 md:pr-8">
-                                                        <a href="#modal-addto-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle" aria-label="add to cart" data-tippy-content="Add to cart">
+                                                        <a href="#modal-addto-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle"
+                                                            aria-label="add to cart" data-tippy-content="Add to cart">
                                                             <i class="icon-bag"></i>
                                                         </a>
                                                     </li>
                                                 </ul>
                                             </div>
-                    
+
                                             <!-- actions end -->
                                         </div>
-                    
+
                                         <div class="py-5 px-4">
-                                            <h3><a class="block text-base hover:text-orange transition-all" href="#">Airpod shortcode product</a></h3>
-                                            <h4 class="font-bold text-md leading-none text-orange mt-3"><del class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00</h4>
+                                            <h3><a class="block text-base hover:text-orange transition-all"
+                                                    href="#">Airpod shortcode product</a></h3>
+                                            <h4 class="font-bold text-md leading-none text-orange mt-3"><del
+                                                    class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00
+                                            </h4>
                                         </div>
                                     </div>
                                 </div>
-                    
+
                                 <div class="w-full md:w-1/2 lg:w-1/3 2xl:w-1/4 px-4 my-4">
-                                    <div class="border border-solid border-gray-300 transition-all hover:shadow-product group">
+                                    <div
+                                        class="border border-solid border-gray-300 transition-all hover:shadow-product group">
                                         <div class="relative overflow-hidden">
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 left-3">New</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
-                                            <img class="w-full h-full" src="{{ asset('images/products/lg/b17.jpg')}} " alt="product image" loading="lazy" width="432" height="480" />
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 left-3">New</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
+                                            <img class="w-full h-full"
+                                                src="{{ asset('images/products/lg/b17.jpg') }} " alt="product image"
+                                                loading="lazy" width="432" height="480" />
                                             <!-- actions start -->
-                    
-                                            <div class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
-                                                <ul class="flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden">
+
+                                            <div
+                                                class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
+                                                <ul
+                                                    class="flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden">
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="#modal-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle" data-tippy-content="Quick View" aria-label="Quick View">
+                                                        <a href="#modal-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle"
+                                                            data-tippy-content="Quick View" aria-label="Quick View">
                                                             <i class="icon-magnifier"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="whishlist.html" class="text-dark flex items-center justify-center text-md hover:text-orange" data-tippy-content="Add to wishlist" aria-label="wishlist">
+                                                        <a href="whishlist.html"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange"
+                                                            data-tippy-content="Add to wishlist"
+                                                            aria-label="wishlist">
                                                             <i class="icon-heart"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="compare.html" class="text-dark flex items-center justify-center text-md hover:text-orange" data-tippy-content="Compare" aria-label="Compare">
+                                                        <a href="compare.html"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange"
+                                                            data-tippy-content="Compare" aria-label="Compare">
                                                             <i class="icon-refresh"></i>
                                                         </a>
                                                     </li>
                                                     <li class="py-4 pl-7 pr-7 md:py-5 md:pl-8 md:pr-8">
-                                                        <a href="#modal-addto-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle" aria-label="add to cart" data-tippy-content="Add to cart">
+                                                        <a href="#modal-addto-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle"
+                                                            aria-label="add to cart" data-tippy-content="Add to cart">
                                                             <i class="icon-bag"></i>
                                                         </a>
                                                     </li>
                                                 </ul>
                                             </div>
-                    
+
                                             <!-- actions end -->
                                         </div>
-                    
+
                                         <div class="py-5 px-4">
-                                            <h3><a class="block text-base hover:text-orange transition-all" href="#">Airpod shortcode product</a></h3>
-                                            <h4 class="font-bold text-md leading-none text-orange mt-3"><del class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00</h4>
+                                            <h3><a class="block text-base hover:text-orange transition-all"
+                                                    href="#">Airpod shortcode product</a></h3>
+                                            <h4 class="font-bold text-md leading-none text-orange mt-3"><del
+                                                    class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00
+                                            </h4>
                                         </div>
                                     </div>
                                 </div>
-                    
-                    
+
+
                             </div>
 
 
@@ -426,17 +590,26 @@
                             <div class="flex flex-wrap -mb-7 -px-4">
 
                                 <div class="w-full px-4 mb-7">
-                                    <div class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
+                                    <div
+                                        class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
                                         <div class="relative overflow-hidden md:w-1/3">
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
-                                            <img class="md:absolute w-full md:h-full md:object-cover" src="{{ asset('images/products/lg/b5.jpg')}} " alt="product image" loading="lazy" width="432" height="480" />
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
+                                            <img class="md:absolute w-full md:h-full md:object-cover"
+                                                src="{{ asset('images/products/lg/b5.jpg') }} " alt="product image"
+                                                loading="lazy" width="432" height="480" />
                                             <!-- actions start -->
 
-                                            <div class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
-                                                <ul class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
+                                            <div
+                                                class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
+                                                <ul
+                                                    class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
                                                     <li>
-                                                        <a href="#modal-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4" aria-label="quick veiw" data-tippy-content="Quick View">
+                                                        <a href="#modal-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4"
+                                                            aria-label="quick veiw" data-tippy-content="Quick View">
                                                             <i class="icon-magnifier-add"></i>
                                                         </a>
                                                     </li>
@@ -447,26 +620,41 @@
                                         </div>
 
                                         <div class="py-5 px-4 flex-1">
-                                            <h4><a class="block text-md hover:text-orange transition-all mb-2" href="#">Batin crofessor pampden</a></h4>
-                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                                            <h4><a class="block text-md hover:text-orange transition-all mb-2"
+                                                    href="#">Batin crofessor pampden</a></h4>
+                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum
+                                                available, but the majority have suffered alteration in some form, by
+                                                injected humour, or randomised words which don't look even slightly
+                                                believable. If you are going to use a passage of Lorem Ipsum, you need
+                                                to be sure there isn't anything embarrassing hidden in the middle of
+                                                text.</p>
 
-                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00</h5>
+                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del
+                                                    class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00
+                                            </h5>
 
                                             <ul class="flex items-center">
                                                 <li class="mr-2">
-                                                    <a href="whishlist.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Add to wishlist" data-tippy-content="Add to wishlist">
+                                                    <a href="whishlist.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Add to wishlist"
+                                                        data-tippy-content="Add to wishlist">
                                                         <i class="icon-heart"></i>
                                                     </a>
                                                 </li>
                                                 <li class="mr-2">
-                                                    <a href="#modal-addto-cart" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle" aria-label="Add to cart" data-tippy-content="Add to cart">
+                                                    <a href="#modal-addto-cart"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle"
+                                                        aria-label="Add to cart" data-tippy-content="Add to cart">
                                                         <i class="icon-basket-loaded"></i>
                                                         <span class="text-sm ml-2">Add to cart</span>
 
                                                     </a>
                                                 </li>
                                                 <li class="mr-2">
-                                                    <a href="compare.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Compare" data-tippy-content="Compare">
+                                                    <a href="compare.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Compare" data-tippy-content="Compare">
                                                         <i class="icon-refresh"></i>
                                                     </a>
                                                 </li>
@@ -478,17 +666,26 @@
                                 </div>
 
                                 <div class="w-full px-4 mb-7">
-                                    <div class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
+                                    <div
+                                        class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
                                         <div class="relative overflow-hidden md:w-1/3">
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
-                                            <img class="md:absolute w-full md:h-full md:object-cover" src="{{ asset('images/products/lg/b5.jpg')}} " alt="product image" loading="lazy" width="432" height="480" />
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
+                                            <img class="md:absolute w-full md:h-full md:object-cover"
+                                                src="{{ asset('images/products/lg/b5.jpg') }} " alt="product image"
+                                                loading="lazy" width="432" height="480" />
                                             <!-- actions start -->
 
-                                            <div class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
-                                                <ul class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
+                                            <div
+                                                class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
+                                                <ul
+                                                    class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
                                                     <li>
-                                                        <a href="#modal-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4" aria-label="quick veiw" data-tippy-content="Quick View">
+                                                        <a href="#modal-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4"
+                                                            aria-label="quick veiw" data-tippy-content="Quick View">
                                                             <i class="icon-magnifier-add"></i>
                                                         </a>
                                                     </li>
@@ -499,26 +696,41 @@
                                         </div>
 
                                         <div class="py-5 px-4 flex-1">
-                                            <h4><a class="block text-md hover:text-orange transition-all mb-2" href="#">Batin crofessor pampden</a></h4>
-                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                                            <h4><a class="block text-md hover:text-orange transition-all mb-2"
+                                                    href="#">Batin crofessor pampden</a></h4>
+                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum
+                                                available, but the majority have suffered alteration in some form, by
+                                                injected humour, or randomised words which don't look even slightly
+                                                believable. If you are going to use a passage of Lorem Ipsum, you need
+                                                to be sure there isn't anything embarrassing hidden in the middle of
+                                                text.</p>
 
-                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00</h5>
+                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del
+                                                    class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00
+                                            </h5>
 
                                             <ul class="flex items-center">
                                                 <li class="mr-2">
-                                                    <a href="whishlist.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Add to wishlist" data-tippy-content="Add to wishlist">
+                                                    <a href="whishlist.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Add to wishlist"
+                                                        data-tippy-content="Add to wishlist">
                                                         <i class="icon-heart"></i>
                                                     </a>
                                                 </li>
                                                 <li class="mr-2">
-                                                    <a href="#modal-addto-cart" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle" aria-label="Add to cart" data-tippy-content="Add to cart">
+                                                    <a href="#modal-addto-cart"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle"
+                                                        aria-label="Add to cart" data-tippy-content="Add to cart">
                                                         <i class="icon-basket-loaded"></i>
                                                         <span class="text-sm ml-2">Add to cart</span>
 
                                                     </a>
                                                 </li>
                                                 <li class="mr-2">
-                                                    <a href="compare.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Compare" data-tippy-content="Compare">
+                                                    <a href="compare.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Compare" data-tippy-content="Compare">
                                                         <i class="icon-refresh"></i>
                                                     </a>
                                                 </li>
@@ -530,17 +742,26 @@
                                 </div>
 
                                 <div class="w-full px-4 mb-7">
-                                    <div class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
+                                    <div
+                                        class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
                                         <div class="relative overflow-hidden md:w-1/3">
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
-                                            <img class="md:absolute w-full md:h-full md:object-cover" src="{{ asset('images/products/lg/b5.jpg')}} " alt="product image" loading="lazy" width="432" height="480" />
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
+                                            <img class="md:absolute w-full md:h-full md:object-cover"
+                                                src="{{ asset('images/products/lg/b5.jpg') }} " alt="product image"
+                                                loading="lazy" width="432" height="480" />
                                             <!-- actions start -->
 
-                                            <div class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
-                                                <ul class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
+                                            <div
+                                                class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
+                                                <ul
+                                                    class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
                                                     <li>
-                                                        <a href="#modal-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4" aria-label="quick veiw" data-tippy-content="Quick View">
+                                                        <a href="#modal-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4"
+                                                            aria-label="quick veiw" data-tippy-content="Quick View">
                                                             <i class="icon-magnifier-add"></i>
                                                         </a>
                                                     </li>
@@ -551,26 +772,41 @@
                                         </div>
 
                                         <div class="py-5 px-4 flex-1">
-                                            <h4><a class="block text-md hover:text-orange transition-all mb-2" href="#">Batin crofessor pampden</a></h4>
-                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                                            <h4><a class="block text-md hover:text-orange transition-all mb-2"
+                                                    href="#">Batin crofessor pampden</a></h4>
+                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum
+                                                available, but the majority have suffered alteration in some form, by
+                                                injected humour, or randomised words which don't look even slightly
+                                                believable. If you are going to use a passage of Lorem Ipsum, you need
+                                                to be sure there isn't anything embarrassing hidden in the middle of
+                                                text.</p>
 
-                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00</h5>
+                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del
+                                                    class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00
+                                            </h5>
 
                                             <ul class="flex items-center">
                                                 <li class="mr-2">
-                                                    <a href="whishlist.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Add to wishlist" data-tippy-content="Add to wishlist">
+                                                    <a href="whishlist.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Add to wishlist"
+                                                        data-tippy-content="Add to wishlist">
                                                         <i class="icon-heart"></i>
                                                     </a>
                                                 </li>
                                                 <li class="mr-2">
-                                                    <a href="#modal-addto-cart" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle" aria-label="Add to cart" data-tippy-content="Add to cart">
+                                                    <a href="#modal-addto-cart"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle"
+                                                        aria-label="Add to cart" data-tippy-content="Add to cart">
                                                         <i class="icon-basket-loaded"></i>
                                                         <span class="text-sm ml-2">Add to cart</span>
 
                                                     </a>
                                                 </li>
                                                 <li class="mr-2">
-                                                    <a href="compare.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Compare" data-tippy-content="Compare">
+                                                    <a href="compare.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Compare" data-tippy-content="Compare">
                                                         <i class="icon-refresh"></i>
                                                     </a>
                                                 </li>
@@ -582,17 +818,26 @@
                                 </div>
 
                                 <div class="w-full px-4 mb-7">
-                                    <div class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
+                                    <div
+                                        class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
                                         <div class="relative overflow-hidden md:w-1/3">
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
-                                            <img class="md:absolute w-full md:h-full md:object-cover" src="{{ asset('images/products/lg/b5.jpg')}} " alt="product image" loading="lazy" width="432" height="480" />
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
+                                            <img class="md:absolute w-full md:h-full md:object-cover"
+                                                src="{{ asset('images/products/lg/b5.jpg') }} " alt="product image"
+                                                loading="lazy" width="432" height="480" />
                                             <!-- actions start -->
 
-                                            <div class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
-                                                <ul class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
+                                            <div
+                                                class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
+                                                <ul
+                                                    class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
                                                     <li>
-                                                        <a href="#modal-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4" aria-label="quick veiw" data-tippy-content="Quick View">
+                                                        <a href="#modal-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4"
+                                                            aria-label="quick veiw" data-tippy-content="Quick View">
                                                             <i class="icon-magnifier-add"></i>
                                                         </a>
                                                     </li>
@@ -603,26 +848,41 @@
                                         </div>
 
                                         <div class="py-5 px-4 flex-1">
-                                            <h4><a class="block text-md hover:text-orange transition-all mb-2" href="#">Batin crofessor pampden</a></h4>
-                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                                            <h4><a class="block text-md hover:text-orange transition-all mb-2"
+                                                    href="#">Batin crofessor pampden</a></h4>
+                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum
+                                                available, but the majority have suffered alteration in some form, by
+                                                injected humour, or randomised words which don't look even slightly
+                                                believable. If you are going to use a passage of Lorem Ipsum, you need
+                                                to be sure there isn't anything embarrassing hidden in the middle of
+                                                text.</p>
 
-                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00</h5>
+                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del
+                                                    class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00
+                                            </h5>
 
                                             <ul class="flex items-center">
                                                 <li class="mr-2">
-                                                    <a href="whishlist.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Add to wishlist" data-tippy-content="Add to wishlist">
+                                                    <a href="whishlist.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Add to wishlist"
+                                                        data-tippy-content="Add to wishlist">
                                                         <i class="icon-heart"></i>
                                                     </a>
                                                 </li>
                                                 <li class="mr-2">
-                                                    <a href="#modal-addto-cart" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle" aria-label="Add to cart" data-tippy-content="Add to cart">
+                                                    <a href="#modal-addto-cart"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle"
+                                                        aria-label="Add to cart" data-tippy-content="Add to cart">
                                                         <i class="icon-basket-loaded"></i>
                                                         <span class="text-sm ml-2">Add to cart</span>
 
                                                     </a>
                                                 </li>
                                                 <li class="mr-2">
-                                                    <a href="compare.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Compare" data-tippy-content="Compare">
+                                                    <a href="compare.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Compare" data-tippy-content="Compare">
                                                         <i class="icon-refresh"></i>
                                                     </a>
                                                 </li>
@@ -635,17 +895,26 @@
 
 
                                 <div class="w-full px-4 mb-7">
-                                    <div class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
+                                    <div
+                                        class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
                                         <div class="relative overflow-hidden md:w-1/3">
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
-                                            <img class="md:absolute w-full md:h-full md:object-cover" src="{{ asset('images/products/lg/b5.jpg')}} " alt="product image" loading="lazy" width="432" height="480" />
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
+                                            <img class="md:absolute w-full md:h-full md:object-cover"
+                                                src="{{ asset('images/products/lg/b5.jpg') }} " alt="product image"
+                                                loading="lazy" width="432" height="480" />
                                             <!-- actions start -->
 
-                                            <div class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
-                                                <ul class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
+                                            <div
+                                                class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
+                                                <ul
+                                                    class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
                                                     <li>
-                                                        <a href="#modal-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4" aria-label="quick veiw" data-tippy-content="Quick View">
+                                                        <a href="#modal-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4"
+                                                            aria-label="quick veiw" data-tippy-content="Quick View">
                                                             <i class="icon-magnifier-add"></i>
                                                         </a>
                                                     </li>
@@ -656,26 +925,41 @@
                                         </div>
 
                                         <div class="py-5 px-4 flex-1">
-                                            <h4><a class="block text-md hover:text-orange transition-all mb-2" href="#">Batin crofessor pampden</a></h4>
-                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                                            <h4><a class="block text-md hover:text-orange transition-all mb-2"
+                                                    href="#">Batin crofessor pampden</a></h4>
+                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum
+                                                available, but the majority have suffered alteration in some form, by
+                                                injected humour, or randomised words which don't look even slightly
+                                                believable. If you are going to use a passage of Lorem Ipsum, you need
+                                                to be sure there isn't anything embarrassing hidden in the middle of
+                                                text.</p>
 
-                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00</h5>
+                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del
+                                                    class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00
+                                            </h5>
 
                                             <ul class="flex items-center">
                                                 <li class="mr-2">
-                                                    <a href="whishlist.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Add to wishlist" data-tippy-content="Add to wishlist">
+                                                    <a href="whishlist.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Add to wishlist"
+                                                        data-tippy-content="Add to wishlist">
                                                         <i class="icon-heart"></i>
                                                     </a>
                                                 </li>
                                                 <li class="mr-2">
-                                                    <a href="#modal-addto-cart" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle" aria-label="Add to cart" data-tippy-content="Add to cart">
+                                                    <a href="#modal-addto-cart"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle"
+                                                        aria-label="Add to cart" data-tippy-content="Add to cart">
                                                         <i class="icon-basket-loaded"></i>
                                                         <span class="text-sm ml-2">Add to cart</span>
 
                                                     </a>
                                                 </li>
                                                 <li class="mr-2">
-                                                    <a href="compare.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Compare" data-tippy-content="Compare">
+                                                    <a href="compare.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Compare" data-tippy-content="Compare">
                                                         <i class="icon-refresh"></i>
                                                     </a>
                                                 </li>
@@ -687,17 +971,26 @@
                                 </div>
 
                                 <div class="w-full px-4 mb-7">
-                                    <div class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
+                                    <div
+                                        class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
                                         <div class="relative overflow-hidden md:w-1/3">
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
-                                            <img class="md:absolute w-full md:h-full md:object-cover" src="{{ asset('images/products/lg/b5.jpg')}} " alt="product image" loading="lazy" width="432" height="480" />
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
+                                            <img class="md:absolute w-full md:h-full md:object-cover"
+                                                src="{{ asset('images/products/lg/b5.jpg') }} " alt="product image"
+                                                loading="lazy" width="432" height="480" />
                                             <!-- actions start -->
 
-                                            <div class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
-                                                <ul class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
+                                            <div
+                                                class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
+                                                <ul
+                                                    class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
                                                     <li>
-                                                        <a href="#modal-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4" aria-label="quick veiw" data-tippy-content="Quick View">
+                                                        <a href="#modal-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4"
+                                                            aria-label="quick veiw" data-tippy-content="Quick View">
                                                             <i class="icon-magnifier-add"></i>
                                                         </a>
                                                     </li>
@@ -708,26 +1001,41 @@
                                         </div>
 
                                         <div class="py-5 px-4 flex-1">
-                                            <h4><a class="block text-md hover:text-orange transition-all mb-2" href="#">Batin crofessor pampden</a></h4>
-                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                                            <h4><a class="block text-md hover:text-orange transition-all mb-2"
+                                                    href="#">Batin crofessor pampden</a></h4>
+                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum
+                                                available, but the majority have suffered alteration in some form, by
+                                                injected humour, or randomised words which don't look even slightly
+                                                believable. If you are going to use a passage of Lorem Ipsum, you need
+                                                to be sure there isn't anything embarrassing hidden in the middle of
+                                                text.</p>
 
-                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00</h5>
+                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del
+                                                    class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00
+                                            </h5>
 
                                             <ul class="flex items-center">
                                                 <li class="mr-2">
-                                                    <a href="whishlist.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Add to wishlist" data-tippy-content="Add to wishlist">
+                                                    <a href="whishlist.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Add to wishlist"
+                                                        data-tippy-content="Add to wishlist">
                                                         <i class="icon-heart"></i>
                                                     </a>
                                                 </li>
                                                 <li class="mr-2">
-                                                    <a href="#modal-addto-cart" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle" aria-label="Add to cart" data-tippy-content="Add to cart">
+                                                    <a href="#modal-addto-cart"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle"
+                                                        aria-label="Add to cart" data-tippy-content="Add to cart">
                                                         <i class="icon-basket-loaded"></i>
                                                         <span class="text-sm ml-2">Add to cart</span>
 
                                                     </a>
                                                 </li>
                                                 <li class="mr-2">
-                                                    <a href="compare.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Compare" data-tippy-content="Compare">
+                                                    <a href="compare.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Compare" data-tippy-content="Compare">
                                                         <i class="icon-refresh"></i>
                                                     </a>
                                                 </li>
@@ -739,17 +1047,26 @@
                                 </div>
 
                                 <div class="w-full px-4 mb-7">
-                                    <div class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
+                                    <div
+                                        class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
                                         <div class="relative overflow-hidden md:w-1/3">
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
-                                            <img class="md:absolute w-full md:h-full md:object-cover" src="{{ asset('images/products/lg/b5.jpg')}} " alt="product image" loading="lazy" width="432" height="480" />
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
+                                            <img class="md:absolute w-full md:h-full md:object-cover"
+                                                src="{{ asset('images/products/lg/b5.jpg') }} " alt="product image"
+                                                loading="lazy" width="432" height="480" />
                                             <!-- actions start -->
 
-                                            <div class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
-                                                <ul class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
+                                            <div
+                                                class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
+                                                <ul
+                                                    class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
                                                     <li>
-                                                        <a href="#modal-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4" aria-label="quick veiw" data-tippy-content="Quick View">
+                                                        <a href="#modal-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4"
+                                                            aria-label="quick veiw" data-tippy-content="Quick View">
                                                             <i class="icon-magnifier-add"></i>
                                                         </a>
                                                     </li>
@@ -760,26 +1077,41 @@
                                         </div>
 
                                         <div class="py-5 px-4 flex-1">
-                                            <h4><a class="block text-md hover:text-orange transition-all mb-2" href="#">Batin crofessor pampden</a></h4>
-                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                                            <h4><a class="block text-md hover:text-orange transition-all mb-2"
+                                                    href="#">Batin crofessor pampden</a></h4>
+                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum
+                                                available, but the majority have suffered alteration in some form, by
+                                                injected humour, or randomised words which don't look even slightly
+                                                believable. If you are going to use a passage of Lorem Ipsum, you need
+                                                to be sure there isn't anything embarrassing hidden in the middle of
+                                                text.</p>
 
-                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00</h5>
+                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del
+                                                    class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00
+                                            </h5>
 
                                             <ul class="flex items-center">
                                                 <li class="mr-2">
-                                                    <a href="whishlist.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Add to wishlist" data-tippy-content="Add to wishlist">
+                                                    <a href="whishlist.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Add to wishlist"
+                                                        data-tippy-content="Add to wishlist">
                                                         <i class="icon-heart"></i>
                                                     </a>
                                                 </li>
                                                 <li class="mr-2">
-                                                    <a href="#modal-addto-cart" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle" aria-label="Add to cart" data-tippy-content="Add to cart">
+                                                    <a href="#modal-addto-cart"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle"
+                                                        aria-label="Add to cart" data-tippy-content="Add to cart">
                                                         <i class="icon-basket-loaded"></i>
                                                         <span class="text-sm ml-2">Add to cart</span>
 
                                                     </a>
                                                 </li>
                                                 <li class="mr-2">
-                                                    <a href="compare.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Compare" data-tippy-content="Compare">
+                                                    <a href="compare.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Compare" data-tippy-content="Compare">
                                                         <i class="icon-refresh"></i>
                                                     </a>
                                                 </li>
@@ -790,17 +1122,26 @@
 
                                 </div>
                                 <div class="w-full px-4 mb-7">
-                                    <div class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
+                                    <div
+                                        class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
                                         <div class="relative overflow-hidden md:w-1/3">
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
-                                            <img class="md:absolute w-full md:h-full md:object-cover" src="{{ asset('images/products/lg/b5.jpg')}} " alt="product image" loading="lazy" width="432" height="480" />
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
+                                            <img class="md:absolute w-full md:h-full md:object-cover"
+                                                src="{{ asset('images/products/lg/b5.jpg') }} " alt="product image"
+                                                loading="lazy" width="432" height="480" />
                                             <!-- actions start -->
 
-                                            <div class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
-                                                <ul class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
+                                            <div
+                                                class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
+                                                <ul
+                                                    class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
                                                     <li>
-                                                        <a href="#modal-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4" aria-label="quick veiw" data-tippy-content="Quick View">
+                                                        <a href="#modal-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4"
+                                                            aria-label="quick veiw" data-tippy-content="Quick View">
                                                             <i class="icon-magnifier-add"></i>
                                                         </a>
                                                     </li>
@@ -811,129 +1152,41 @@
                                         </div>
 
                                         <div class="py-5 px-4 flex-1">
-                                            <h4><a class="block text-md hover:text-orange transition-all mb-2" href="#">Batin crofessor pampden</a></h4>
-                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                                            <h4><a class="block text-md hover:text-orange transition-all mb-2"
+                                                    href="#">Batin crofessor pampden</a></h4>
+                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum
+                                                available, but the majority have suffered alteration in some form, by
+                                                injected humour, or randomised words which don't look even slightly
+                                                believable. If you are going to use a passage of Lorem Ipsum, you need
+                                                to be sure there isn't anything embarrassing hidden in the middle of
+                                                text.</p>
 
-                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00</h5>
+                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del
+                                                    class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00
+                                            </h5>
 
                                             <ul class="flex items-center">
                                                 <li class="mr-2">
-                                                    <a href="whishlist.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Add to wishlist" data-tippy-content="Add to wishlist">
+                                                    <a href="whishlist.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Add to wishlist"
+                                                        data-tippy-content="Add to wishlist">
                                                         <i class="icon-heart"></i>
                                                     </a>
                                                 </li>
                                                 <li class="mr-2">
-                                                    <a href="#modal-addto-cart" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle" aria-label="Add to cart" data-tippy-content="Add to cart">
+                                                    <a href="#modal-addto-cart"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle"
+                                                        aria-label="Add to cart" data-tippy-content="Add to cart">
                                                         <i class="icon-basket-loaded"></i>
                                                         <span class="text-sm ml-2">Add to cart</span>
 
                                                     </a>
                                                 </li>
                                                 <li class="mr-2">
-                                                    <a href="compare.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Compare" data-tippy-content="Compare">
-                                                        <i class="icon-refresh"></i>
-                                                    </a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="w-full px-4 mb-7">
-                                    <div class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
-                                        <div class="relative overflow-hidden md:w-1/3">
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
-                                            <img class="md:absolute w-full md:h-full md:object-cover" src="{{ asset('images/products/lg/b5.jpg')}} " alt="product image" loading="lazy" width="432" height="480" />
-                                            <!-- actions start -->
-
-                                            <div class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
-                                                <ul class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
-                                                    <li>
-                                                        <a href="#modal-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4" aria-label="quick veiw" data-tippy-content="Quick View">
-                                                            <i class="icon-magnifier-add"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                            <!-- actions end -->
-                                        </div>
-
-                                        <div class="py-5 px-4 flex-1">
-                                            <h4><a class="block text-md hover:text-orange transition-all mb-2" href="#">Batin crofessor pampden</a></h4>
-                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-
-                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00</h5>
-
-                                            <ul class="flex items-center">
-                                                <li class="mr-2">
-                                                    <a href="whishlist.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Add to wishlist" data-tippy-content="Add to wishlist">
-                                                        <i class="icon-heart"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="mr-2">
-                                                    <a href="#modal-addto-cart" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle" aria-label="Add to cart" data-tippy-content="Add to cart">
-                                                        <i class="icon-basket-loaded"></i>
-                                                        <span class="text-sm ml-2">Add to cart</span>
-
-                                                    </a>
-                                                </li>
-                                                <li class="mr-2">
-                                                    <a href="compare.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Compare" data-tippy-content="Compare">
-                                                        <i class="icon-refresh"></i>
-                                                    </a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="w-full px-4 mb-7">
-                                    <div class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
-                                        <div class="relative overflow-hidden md:w-1/3">
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
-                                            <img class="md:absolute w-full md:h-full md:object-cover" src="{{ asset('images/products/lg/b5.jpg')}} " alt="product image" loading="lazy" width="432" height="480" />
-                                            <!-- actions start -->
-
-                                            <div class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
-                                                <ul class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
-                                                    <li>
-                                                        <a href="#modal-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4" aria-label="quick veiw" data-tippy-content="Quick View">
-                                                            <i class="icon-magnifier-add"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                            <!-- actions end -->
-                                        </div>
-
-                                        <div class="py-5 px-4 flex-1">
-                                            <h4><a class="block text-md hover:text-orange transition-all mb-2" href="#">Batin crofessor pampden</a></h4>
-                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-
-                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00</h5>
-
-                                            <ul class="flex items-center">
-                                                <li class="mr-2">
-                                                    <a href="whishlist.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Add to wishlist" data-tippy-content="Add to wishlist">
-                                                        <i class="icon-heart"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="mr-2">
-                                                    <a href="#modal-addto-cart" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle" aria-label="Add to cart" data-tippy-content="Add to cart">
-                                                        <i class="icon-basket-loaded"></i>
-                                                        <span class="text-sm ml-2">Add to cart</span>
-
-                                                    </a>
-                                                </li>
-                                                <li class="mr-2">
-                                                    <a href="compare.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Compare" data-tippy-content="Compare">
+                                                    <a href="compare.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Compare" data-tippy-content="Compare">
                                                         <i class="icon-refresh"></i>
                                                     </a>
                                                 </li>
@@ -945,17 +1198,26 @@
                                 </div>
 
                                 <div class="w-full px-4 mb-7">
-                                    <div class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
+                                    <div
+                                        class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
                                         <div class="relative overflow-hidden md:w-1/3">
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
-                                            <img class="md:absolute w-full md:h-full md:object-cover" src="{{ asset('images/products/lg/b5.jpg')}} " alt="product image" loading="lazy" width="432" height="480" />
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
+                                            <img class="md:absolute w-full md:h-full md:object-cover"
+                                                src="{{ asset('images/products/lg/b5.jpg') }} " alt="product image"
+                                                loading="lazy" width="432" height="480" />
                                             <!-- actions start -->
 
-                                            <div class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
-                                                <ul class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
+                                            <div
+                                                class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
+                                                <ul
+                                                    class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
                                                     <li>
-                                                        <a href="#modal-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4" aria-label="quick veiw" data-tippy-content="Quick View">
+                                                        <a href="#modal-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4"
+                                                            aria-label="quick veiw" data-tippy-content="Quick View">
                                                             <i class="icon-magnifier-add"></i>
                                                         </a>
                                                     </li>
@@ -966,26 +1228,116 @@
                                         </div>
 
                                         <div class="py-5 px-4 flex-1">
-                                            <h4><a class="block text-md hover:text-orange transition-all mb-2" href="#">Batin crofessor pampden</a></h4>
-                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                                            <h4><a class="block text-md hover:text-orange transition-all mb-2"
+                                                    href="#">Batin crofessor pampden</a></h4>
+                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum
+                                                available, but the majority have suffered alteration in some form, by
+                                                injected humour, or randomised words which don't look even slightly
+                                                believable. If you are going to use a passage of Lorem Ipsum, you need
+                                                to be sure there isn't anything embarrassing hidden in the middle of
+                                                text.</p>
 
-                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00</h5>
+                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del
+                                                    class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00
+                                            </h5>
 
                                             <ul class="flex items-center">
                                                 <li class="mr-2">
-                                                    <a href="whishlist.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Add to wishlist" data-tippy-content="Add to wishlist">
+                                                    <a href="whishlist.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Add to wishlist"
+                                                        data-tippy-content="Add to wishlist">
                                                         <i class="icon-heart"></i>
                                                     </a>
                                                 </li>
                                                 <li class="mr-2">
-                                                    <a href="#modal-addto-cart" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle" aria-label="Add to cart" data-tippy-content="Add to cart">
+                                                    <a href="#modal-addto-cart"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle"
+                                                        aria-label="Add to cart" data-tippy-content="Add to cart">
                                                         <i class="icon-basket-loaded"></i>
                                                         <span class="text-sm ml-2">Add to cart</span>
 
                                                     </a>
                                                 </li>
                                                 <li class="mr-2">
-                                                    <a href="compare.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Compare" data-tippy-content="Compare">
+                                                    <a href="compare.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Compare" data-tippy-content="Compare">
+                                                        <i class="icon-refresh"></i>
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="w-full px-4 mb-7">
+                                    <div
+                                        class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
+                                        <div class="relative overflow-hidden md:w-1/3">
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
+                                            <img class="md:absolute w-full md:h-full md:object-cover"
+                                                src="{{ asset('images/products/lg/b5.jpg') }} " alt="product image"
+                                                loading="lazy" width="432" height="480" />
+                                            <!-- actions start -->
+
+                                            <div
+                                                class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
+                                                <ul
+                                                    class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
+                                                    <li>
+                                                        <a href="#modal-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4"
+                                                            aria-label="quick veiw" data-tippy-content="Quick View">
+                                                            <i class="icon-magnifier-add"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <!-- actions end -->
+                                        </div>
+
+                                        <div class="py-5 px-4 flex-1">
+                                            <h4><a class="block text-md hover:text-orange transition-all mb-2"
+                                                    href="#">Batin crofessor pampden</a></h4>
+                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum
+                                                available, but the majority have suffered alteration in some form, by
+                                                injected humour, or randomised words which don't look even slightly
+                                                believable. If you are going to use a passage of Lorem Ipsum, you need
+                                                to be sure there isn't anything embarrassing hidden in the middle of
+                                                text.</p>
+
+                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del
+                                                    class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00
+                                            </h5>
+
+                                            <ul class="flex items-center">
+                                                <li class="mr-2">
+                                                    <a href="whishlist.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Add to wishlist"
+                                                        data-tippy-content="Add to wishlist">
+                                                        <i class="icon-heart"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mr-2">
+                                                    <a href="#modal-addto-cart"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle"
+                                                        aria-label="Add to cart" data-tippy-content="Add to cart">
+                                                        <i class="icon-basket-loaded"></i>
+                                                        <span class="text-sm ml-2">Add to cart</span>
+
+                                                    </a>
+                                                </li>
+                                                <li class="mr-2">
+                                                    <a href="compare.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Compare" data-tippy-content="Compare">
                                                         <i class="icon-refresh"></i>
                                                     </a>
                                                 </li>
@@ -997,17 +1349,26 @@
                                 </div>
 
                                 <div class="w-full px-4 mb-7">
-                                    <div class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
+                                    <div
+                                        class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
                                         <div class="relative overflow-hidden md:w-1/3">
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
-                                            <span class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
-                                            <img class="md:absolute w-full md:h-full md:object-cover" src="{{ asset('images/products/lg/b5.jpg')}} " alt="product image" loading="lazy" width="432" height="480" />
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
+                                            <img class="md:absolute w-full md:h-full md:object-cover"
+                                                src="{{ asset('images/products/lg/b5.jpg') }} " alt="product image"
+                                                loading="lazy" width="432" height="480" />
                                             <!-- actions start -->
 
-                                            <div class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
-                                                <ul class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
+                                            <div
+                                                class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
+                                                <ul
+                                                    class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
                                                     <li>
-                                                        <a href="#modal-cart" class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4" aria-label="quick veiw" data-tippy-content="Quick View">
+                                                        <a href="#modal-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4"
+                                                            aria-label="quick veiw" data-tippy-content="Quick View">
                                                             <i class="icon-magnifier-add"></i>
                                                         </a>
                                                     </li>
@@ -1018,26 +1379,117 @@
                                         </div>
 
                                         <div class="py-5 px-4 flex-1">
-                                            <h4><a class="block text-md hover:text-orange transition-all mb-2" href="#">Batin crofessor pampden</a></h4>
-                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                                            <h4><a class="block text-md hover:text-orange transition-all mb-2"
+                                                    href="#">Batin crofessor pampden</a></h4>
+                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum
+                                                available, but the majority have suffered alteration in some form, by
+                                                injected humour, or randomised words which don't look even slightly
+                                                believable. If you are going to use a passage of Lorem Ipsum, you need
+                                                to be sure there isn't anything embarrassing hidden in the middle of
+                                                text.</p>
 
-                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00</h5>
+                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del
+                                                    class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00
+                                            </h5>
 
                                             <ul class="flex items-center">
                                                 <li class="mr-2">
-                                                    <a href="whishlist.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Add to wishlist" data-tippy-content="Add to wishlist">
+                                                    <a href="whishlist.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Add to wishlist"
+                                                        data-tippy-content="Add to wishlist">
                                                         <i class="icon-heart"></i>
                                                     </a>
                                                 </li>
                                                 <li class="mr-2">
-                                                    <a href="#modal-addto-cart" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle" aria-label="Add to cart" data-tippy-content="Add to cart">
+                                                    <a href="#modal-addto-cart"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle"
+                                                        aria-label="Add to cart" data-tippy-content="Add to cart">
                                                         <i class="icon-basket-loaded"></i>
                                                         <span class="text-sm ml-2">Add to cart</span>
 
                                                     </a>
                                                 </li>
                                                 <li class="mr-2">
-                                                    <a href="compare.html" class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange" aria-label="Compare" data-tippy-content="Compare">
+                                                    <a href="compare.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Compare" data-tippy-content="Compare">
+                                                        <i class="icon-refresh"></i>
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="w-full px-4 mb-7">
+                                    <div
+                                        class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
+                                        <div class="relative overflow-hidden md:w-1/3">
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
+                                            <span
+                                                class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
+                                            <img class="md:absolute w-full md:h-full md:object-cover"
+                                                src="{{ asset('images/products/lg/b5.jpg') }} " alt="product image"
+                                                loading="lazy" width="432" height="480" />
+                                            <!-- actions start -->
+
+                                            <div
+                                                class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
+                                                <ul
+                                                    class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
+                                                    <li>
+                                                        <a href="#modal-cart"
+                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4"
+                                                            aria-label="quick veiw" data-tippy-content="Quick View">
+                                                            <i class="icon-magnifier-add"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <!-- actions end -->
+                                        </div>
+
+                                        <div class="py-5 px-4 flex-1">
+                                            <h4><a class="block text-md hover:text-orange transition-all mb-2"
+                                                    href="#">Batin crofessor pampden</a></h4>
+                                            <p class="text-sm">There are many variations of passages of Lorem Ipsum
+                                                available, but the majority have suffered alteration in some form, by
+                                                injected humour, or randomised words which don't look even slightly
+                                                believable. If you are going to use a passage of Lorem Ipsum, you need
+                                                to be sure there isn't anything embarrassing hidden in the middle of
+                                                text.</p>
+
+                                            <h5 class="font-bold text-md leading-none text-orange mt-4 mb-4"><del
+                                                    class="font-normal text-sm mr-1 inline-block">$110.00</del>$130.00
+                                            </h5>
+
+                                            <ul class="flex items-center">
+                                                <li class="mr-2">
+                                                    <a href="whishlist.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Add to wishlist"
+                                                        data-tippy-content="Add to wishlist">
+                                                        <i class="icon-heart"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="mr-2">
+                                                    <a href="#modal-addto-cart"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle"
+                                                        aria-label="Add to cart" data-tippy-content="Add to cart">
+                                                        <i class="icon-basket-loaded"></i>
+                                                        <span class="text-sm ml-2">Add to cart</span>
+
+                                                    </a>
+                                                </li>
+                                                <li class="mr-2">
+                                                    <a href="compare.html"
+                                                        class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                        aria-label="Compare" data-tippy-content="Compare">
                                                         <i class="icon-refresh"></i>
                                                     </a>
                                                 </li>
@@ -1059,22 +1511,27 @@
                     <div class="mt-12">
                         <ul class="pagination flex flex-wrap items-center justify-center">
                             <li class="mx-2">
-                                <a class="flex flex-wrap items-center justify-center  w-11 h-11 bg-white shadow text-orange leading-none transition-all hover:bg-orange hover:text-white" href="#">
+                                <a class="flex flex-wrap items-center justify-center  w-11 h-11 bg-white shadow text-orange leading-none transition-all hover:bg-orange hover:text-white"
+                                    href="#">
                                     <i class="icon-arrow-left"></i>
                                 </a>
                             </li>
 
                             <li class="mx-2">
-                                <a class="flex flex-wrap items-center justify-center  w-11 h-11 bg-white shadow text-orange leading-none transition-all hover:bg-orange hover:text-white active" href="#">1</a>
+                                <a class="flex flex-wrap items-center justify-center  w-11 h-11 bg-white shadow text-orange leading-none transition-all hover:bg-orange hover:text-white active"
+                                    href="#">1</a>
                             </li>
                             <li class="mx-2">
-                                <a class="flex flex-wrap items-center justify-center  w-11 h-11 bg-white shadow text-orange leading-none transition-all hover:bg-orange hover:text-white" href="#">2</a>
+                                <a class="flex flex-wrap items-center justify-center  w-11 h-11 bg-white shadow text-orange leading-none transition-all hover:bg-orange hover:text-white"
+                                    href="#">2</a>
                             </li>
                             <li class="mx-2">
-                                <a class="flex flex-wrap items-center justify-center  w-11 h-11 bg-white shadow text-orange leading-none transition-all hover:bg-orange hover:text-white" href="#">3</a>
+                                <a class="flex flex-wrap items-center justify-center  w-11 h-11 bg-white shadow text-orange leading-none transition-all hover:bg-orange hover:text-white"
+                                    href="#">3</a>
                             </li>
                             <li class="mx-2">
-                                <a class="flex flex-wrap items-center justify-center  w-11 h-11 bg-white shadow text-orange leading-none transition-all hover:bg-orange hover:text-white" href="#">
+                                <a class="flex flex-wrap items-center justify-center  w-11 h-11 bg-white shadow text-orange leading-none transition-all hover:bg-orange hover:text-white"
+                                    href="#">
                                     <i class="icon-arrow-right"></i>
                                 </a>
                             </li>
