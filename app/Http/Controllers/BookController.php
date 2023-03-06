@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Helpers\Utility;
 use App\Models\Book;
+use App\Models\Category;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class BookController extends Controller
@@ -26,8 +28,8 @@ class BookController extends Controller
      */
     public function create()
     {
-        //
-        return view('admin.books.create');
+        $products = Product::all();
+        return view('admin.books.create', compact('products'));
     }
 
     /**
@@ -52,13 +54,13 @@ class BookController extends Controller
         ]);
         $book = new Book();
         $book->fill($request->input());
-        if (request()->hasFile('featured_image')){
+        if (request()->hasFile('featured_image')) {
             $book->featured_image = Utility::UploadFile('featured_image');
         }
         $book->save();
 
         return redirect()->route('books.index')
-          ->with('Success'. 'Book created successfully');
+            ->with('Success' . 'Book created successfully');
     }
 
     /**
@@ -69,8 +71,8 @@ class BookController extends Controller
      */
     public function show(Book $book)
     {
-        //
-        return view('admin.books.show', compact('book'));
+        $categories = Category::all();
+        return view('admin.books.show', compact('book', 'categories'));
     }
 
     /**
@@ -81,8 +83,8 @@ class BookController extends Controller
      */
     public function edit(Book $book)
     {
-        //
-        return view('admin.books.create' , compact('book'));
+        $products = Product::all();
+        return view('admin.books.create', compact('book', 'products'));
     }
 
     /**
@@ -104,7 +106,7 @@ class BookController extends Controller
         $book->update();
 
         return redirect()->route('books.index')
-         ->with('Success', 'Book updated successfully');
+            ->with('Success', 'Book updated successfully');
     }
 
     /**
@@ -121,6 +123,6 @@ class BookController extends Controller
         $book->delete();
 
         return redirect()->route('books.index')
-         ->with('Success', 'Book delete Successfully');
+            ->with('Success', 'Book delete Successfully');
     }
 }

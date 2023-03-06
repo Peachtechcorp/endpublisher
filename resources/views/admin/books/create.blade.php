@@ -1,8 +1,8 @@
-@extends('layoutS.app')
+@extends('layouts.app')
 
 @section('content')
-<x-admin.layouts.header />
-<x-admin.layouts.side-bar />
+    <x-admin.layouts.header />
+    <x-admin.layouts.side-bar />
     <!-- Left Sidebar End -->
 
     <!-- ============================================================== -->
@@ -47,9 +47,19 @@
                                             enctype="multipart/form-data" method="POST">
                                             @csrf
                                         @endisset
-                                        
+
                                         <div class="form-group row">
-                                            <div class="col-sm-7">
+                                            <div class="col-sm">
+                                                <strong>Select Product Category:</strong>
+                                                <select name="product_id" class="form-control" required>
+                                                    @foreach ($products as $product)
+                                                        <option value={{ isset($book) ? $book->product_id : $product->id }}>
+                                                            {{ $product->name }}</option>
+                                                    @endforeach
+                                                </select>
+
+                                            </div>
+                                            <div class="col-sm">
                                                 <strong>Name:</strong>
                                                 <input name="name" type="text" class="form-control"
                                                     value="{{ isset($book) ? $book->name : old('name') }}"

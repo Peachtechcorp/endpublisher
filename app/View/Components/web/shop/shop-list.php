@@ -2,11 +2,12 @@
 
 namespace App\View\Components\web\shop;
 
+use App\Models\Book;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class shop-list extends Component
+class shoplist extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +22,7 @@ class shop-list extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.web.shop.shop-list');
+        $books = Book::paginate();
+        return view('components.web.shop.shop-list', compact('books'));
     }
 }
