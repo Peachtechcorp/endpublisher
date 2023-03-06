@@ -16,7 +16,8 @@
         <link href="{{ asset('admin/css/app.min.css')}}" rel="stylesheet" type="text/css" />
 
     </head>
-<body>
+<body class="">
+    
 
     <main class="py-4">
         @yield('content')
@@ -24,5 +25,19 @@
 
 
     {{-- <x-admin.layouts.footer /> --}}
+            <!-- Vendor js -->
+            <script src="{{ asset('admin/js/vendor.min.js')}}"></script>
+
+            <!-- Chart JS -->
+            <script src="{{ asset('admin/libs/chart-js/Chart.bundle.min.js')}}"></script>
+    
+            <!-- Sparkline charts -->
+            <script src="{{ asset('admin/libs/jquery-sparkline/jquery.sparkline.min.js')}}"></script>
+    
+            <!-- Dashboard js -->
+            <script src="{{ asset('admin/js/pages/dashboard.init.js')}}"></script>
+            
+            <!-- App js -->
+            <script src="{{ asset('admin/js/app.min.js')}}"></script>
 </body>
 </html>

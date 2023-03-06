@@ -25,14 +25,9 @@
                     <div class="relative overflow-hidden">
                         <span class="font-semibold uppercase text-sm text-white inline-block py-1 px-2 leading-none absolute top-3  z-10 right-3 bg-orange">Sale</span>
                         <div class="gallery mb-6">
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="{{ asset('images/products/lg/b17.jpg')}}" alt="product image">
-                                    </div>
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('images/products/lg/b17.jpg')}}" alt="product image">
                                 </div>
-                            </div>
-
                         </div>
 
                     </div>
