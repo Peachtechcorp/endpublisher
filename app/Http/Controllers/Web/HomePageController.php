@@ -19,4 +19,9 @@ class HomePageController extends Controller
         $books = Book::paginate(15);
         return view("shop", compact('books'));
     }
+
+    public function category()
+    {
+        return view("category");
+    }
 }

@@ -36,6 +36,7 @@ Route::get('/checkout', function () {
 });
 Route::get("/", [App\Http\Controllers\Web\HomePageController::class, 'index'])->name('welcome');
 Route::get("/shop", [App\Http\Controllers\Web\HomePageController::class, 'shop'])->name("shop");
+Route::get("/books/{category}", [App\Http\Controllers\Web\HomePageController::class, 'category'])->name("book.category");
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('books', BookController::class);
 Route::resource('orders', OrderController::class);
