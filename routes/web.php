@@ -29,13 +29,7 @@ Route::get('/shop-single', function () {
 });
 
 
-Route::get('/checkout', function () {
-    return view('checkout');
-});
 
-Route::get('/shop-category', function () {
-    return view('shop-category');
-});
 
 
 Route::get("/", [App\Http\Controllers\Web\HomePageController::class, 'index'])->name('welcome');
@@ -56,5 +50,6 @@ Route::post("books/{book}/assign-category", AssignCategoryController::class)->na
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get("/checkout", [App\Http\Controllers\Web\HomePageController::class, 'checkout'])->name("checkout");
 
 Route::post("/books/shop-cart/{book}", ShopCartController::class)->name("cart.add");

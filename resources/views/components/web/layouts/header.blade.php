@@ -26,7 +26,8 @@
                                     @foreach ($categories as $category)
                                         <li class="my-3"><a
                                                 class="text-dark font-normal text-base capitalize transition-all hover:text-orange"
-                                                href="index.html">{{ $category->name }}</a></li>
+                                                href="{{ route('book.category', ['category' => $category->id]) }}">{{ $category->name }}</a>
+                                        </li>
                                     @endforeach
 
 

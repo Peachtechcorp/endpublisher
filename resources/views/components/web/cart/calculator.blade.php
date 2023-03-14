@@ -82,10 +82,8 @@
                         </div>
                     </div>
                     <div class="mt-8">
-                        <a href="#"
-                            class="inline-block bg-dark leading-none py-4 px-5 md:px-8 text-sm text-white transition-all hover:bg-orange uppercase font-semibold hover:text-white">Update
-                            Cart</a>
-                        <a href="#"
+
+                        <a href="{{ route('checkout') }}"
                             class="inline-block bg-dark leading-none py-4 px-5 md:px-8 text-sm text-white transition-all hover:bg-orange uppercase font-semibold hover:text-white ml-4">checkout</a>
                     </div>
                 </div>

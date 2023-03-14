@@ -188,27 +188,34 @@
 
                                                     <ul class="flex items-center">
                                                         <li class="mr-2">
-                                                            <a href="whishlist.html"
+                                                            <a href="{{ route('book.view', ['book' => $book]) }}"
                                                                 class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
                                                                 aria-label="Add to wishlist"
                                                                 data-tippy-content="Add to wishlist">
-                                                                <i class="icon-heart"></i>
+                                                                <i class="icon-eye"></i>
                                                             </a>
                                                         </li>
                                                         <li class="mr-2">
-                                                            <a href="#modal-addto-cart"
-                                                                class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange modal-toggle"
-                                                                aria-label="Add to cart" data-tippy-content="Add to cart">
-                                                                <i class="icon-basket-loaded"></i>
-                                                                <span class="text-sm ml-2">Add to cart</span>
+                                                            <form action="{{ route('cart.add', ['book' => $book]) }}"
+                                                                method="post">
+                                                                @csrf
+                                                                <a href="javascript:void(0);"
+                                                                    onclick="this.parentElement.submit()"
+                                                                    class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
+                                                                    aria-label="add to cart"
+                                                                    data-tippy-content="Add to cart">
+                                                                    <i class="icon-basket-loaded"></i>
+                                                                    <span class="text-sm ml-2">Add to cart</span>
+                                                                </a>
+                                                            </form>
 
-                                                            </a>
                                                         </li>
                                                         <li class="mr-2">
-                                                            <a href="compare.html"
+                                                            <a href="#"
                                                                 class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
-                                                                aria-label="Compare" data-tippy-content="Compare">
-                                                                <i class="icon-refresh"></i>
+                                                                data-tippy-content="Add to wishlist"
+                                                                aria-label="wishlist">
+                                                                <i class="icon-heart"></i>
                                                             </a>
                                                         </li>
 
