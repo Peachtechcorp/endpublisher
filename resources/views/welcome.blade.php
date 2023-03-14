@@ -1,5 +1,7 @@
 @extends('layouts.web')
-
+@php
+    $categories = App\Models\Category::all();
+@endphp
 @section('content')
     <div class="">
         <x-web.home.slider />
@@ -57,12 +59,18 @@
                                                                         </a>
                                                                     </li>
                                                                     <li class="py-4 pl-7 pr-7 md:py-5 md:pl-8 md:pr-8">
-                                                                        <a href="#modal-addto-cart"
-                                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle"
-                                                                            aria-label="add to cart"
-                                                                            data-tippy-content="Add to cart">
-                                                                            <i class="icon-bag"></i>
-                                                                        </a>
+                                                                        <form
+                                                                            action="{{ route('cart.add', ['book' => $book]) }}"
+                                                                            method="post">
+                                                                            @csrf
+                                                                            <a href="javascript:void(0);"
+                                                                                onclick="this.parentElement.submit()"
+                                                                                class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle"
+                                                                                aria-label="add to cart"
+                                                                                data-tippy-content="Add to cart">
+                                                                                <i class="icon-bag"></i>
+                                                                            </a>
+                                                                        </form>
                                                                     </li>
                                                                 </ul>
                                                             </div>

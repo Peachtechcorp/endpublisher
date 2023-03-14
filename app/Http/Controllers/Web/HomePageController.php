@@ -30,4 +30,9 @@ class HomePageController extends Controller
         $books = Book::find($book);
         return view("shop-single", compact("books"));
     }
+
+    public function cart()
+    {
+        return view("cart");
+    }
 }

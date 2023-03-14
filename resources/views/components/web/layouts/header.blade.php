@@ -60,12 +60,14 @@
                                 </button>
                             </li>
                             <li class="ml-6">
-                                <a href="#offcanvas-cart"
+                                <a href="{{ route('cart') }}"
                                     class="text-primary text-md hover:text-orange transition-all relative offcanvas-toggle">
                                     <span
-                                        class="w-5 h-5 bg-dark text-white text-sm rounded-full font-normal flex flex-wrap items-center justify-center absolute -top-3 left-2 leading-none">4</span>
+                                        class="w-5 h-5 bg-dark text-white text-sm rounded-full font-normal flex flex-wrap items-center justify-center absolute -top-3 left-2 leading-none">
+                                        1
+                                    </span>
                                     <i class="icon-bag"></i>
-                                    <span class="text-base leading-none text-dark">$245</span>
+
                                 </a>
 
                             </li>
