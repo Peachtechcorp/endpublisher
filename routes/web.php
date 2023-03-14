@@ -34,6 +34,12 @@ Route::get('/cart', function () {
 Route::get('/checkout', function () {
     return view('checkout');
 });
+
+Route::get('/shop-category', function () {
+    return view('shop-category');
+});
+
+
 Route::get("/", [App\Http\Controllers\Web\HomePageController::class, 'index'])->name('welcome');
 Route::get("/shop", [App\Http\Controllers\Web\HomePageController::class, 'shop'])->name("shop");
 Route::get("/books/categories/{category}", [App\Http\Controllers\Web\HomePageController::class, 'category'])->name("book.category");
