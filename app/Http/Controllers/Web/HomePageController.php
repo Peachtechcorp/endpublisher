@@ -20,14 +20,25 @@ class HomePageController extends Controller
         return view("shop", compact('books'));
     }
 
-    public function category()
+    public function category(Category $category)
     {
-        return view("category");
+        $categories = $category->load("books");
+        return view("shop-category", compact("categories"));
     }
 
     public function showBook($book)
     {
-        $books = Book::find($book);
-        return view("shop-single", compact("books"));
+        $book = Book::find($book);
+        return view("shop-single", compact("book"));
+    }
+
+    public function cart()
+    {
+        return view("cart");
+    }
+
+    public function checkout()
+    {
+        return view("checkout");
     }
 }
