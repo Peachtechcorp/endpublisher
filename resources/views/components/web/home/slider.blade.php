@@ -22,7 +22,7 @@
                             </div>
 
                             <div class="md:flex-shrink mt-10 md:mt-0">
-                                <img class="sm:max-w-sm mx-auto lg:max-w-lg xl:max-w-full" src="{{ asset('images/hero/sm/slider1.webp')}} " alt="image" loading="lazy" width="570" height="570">
+                                <img class="sm:max-w-sm mx-auto lg:max-w-lg xl:max-w-full" src="{{ asset('images/hero/sm/slider1.png')}} " alt="image" loading="lazy" width="570" height="570">
                             </div>
                         </div>
                     </div>
