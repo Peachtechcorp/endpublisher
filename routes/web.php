@@ -31,12 +31,20 @@ Route::get('/cart', function () {
     return view('cart');
 });
 
+Route::get('/contact', function () {
+    return view('contact');
+});
+
 Route::get('/checkout', function () {
     return view('checkout');
 });
 
 Route::get('/shop-category', function () {
     return view('shop-category');
+});
+
+Route::get('/about', function () {
+    return view('about');
 });
 
 
