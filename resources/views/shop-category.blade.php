@@ -25,6 +25,7 @@
 
 
         <div class="py-24">
+
             <div class="container">
                 <div class="flex flex-wrap flex-col lg:flex-row -mx-4">
                     <div id="shoptab" class="flex-1 px-4">
@@ -259,3 +260,4 @@
             </div>
         </div>
     @endsection
+

@@ -148,23 +148,7 @@
 
                                             <div
                                                 class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
-                                                <ul
-                                                    class="flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden">
-                                                    <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="#modal-cart"
-                                                            class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle"
-                                                            data-tippy-content="Quick View" aria-label="Quick View">
-                                                            <i class="icon-magnifier"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                        <a href="whishlist.html"
-                                                            class="text-dark flex items-center justify-center text-md hover:text-orange"
-                                                            data-tippy-content="Add to wishlist"
-                                                            aria-label="wishlist">
-                                                            <i class="icon-heart"></i>
-                                                        </a>
-                                                    </li>
+                                                <ul class="flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden">
                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
                                                         <a href="compare.html"
                                                             class="text-dark flex items-center justify-center text-md hover:text-orange"

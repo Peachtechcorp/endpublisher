@@ -30,6 +30,16 @@ Route::get('/shop-single', function () {
 
 
 
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+
+
+
+Route::get('/about', function () {
+    return view('about');
+});
 
 
 Route::get("/", [App\Http\Controllers\Web\HomePageController::class, 'index'])->name('welcome');
