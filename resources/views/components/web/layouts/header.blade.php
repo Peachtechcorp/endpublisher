@@ -183,144 +183,21 @@
 
             <nav class="offcanvas-menu pb-10 mb-10 border-b border-solid border-gray-600">
                 <ul>
-                    <li class="relative block">
-                        <a href="#"
-                            class="block capitalize font-normal text-base my-2 py-1 font-roboto">Home</a>
-                        <ul class="offcanvas-submenu static top-auto hidden w-full visible opacity-100">
-                            <li><a class="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                    href="index.html">Airpod</a></li>
-                            <li><a class="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                    href="index-2.html">Smartwatch</a></li>
-                            <li><a class="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                    href="index-3.html">Drone</a></li>
-                            <li><a class="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                    href="index-4.html">BackPack</a></li>
-                        </ul>
+                    <li class="relative block"><a href="/"
+                            class="relative block capitalize font-normal text-base my-2 py-1 font-roboto">Home</a>
                     </li>
-                    <li class="relative block">
-                        <a href="#"
-                            class="block capitalize font-normal text-base my-2 py-1 font-roboto">Shop</a>
-                        <ul class="offcanvas-submenu static top-auto hidden w-full visible opacity-100">
-                            <li>
-                                <a class="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                    href="#">Shop Grid</a>
-                                <ul class="offcanvas-submenu static top-auto hidden w-full visible opacity-100">
-                                    <li>
-                                        <a class="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                            href="shop-grid-3-column.html">Shop Grid 3 Column</a>
-                                    </li>
-                                    <li>
-                                        <a class="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                            href="shop-grid-4-column.html">Shop Grid 4 Column</a>
-                                    </li>
-                                    <li>
-                                        <a class="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                            href="shop-grid-left-sidebar.html">Shop Grid Left Sidebar</a>
-                                    </li>
-                                    <li>
-                                        <a class="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                            href="shop-grid-right-sidebar.html">shop Grid Right Sidebar</a>
-                                    </li>
-
-                                </ul>
-                            </li>
-                            <li>
-                                <a class="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                    href="#">shop list</a>
-                                <ul class="offcanvas-submenu static top-auto hidden w-full visible opacity-100">
-                                    <li><a class="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                            href="shop-list.html">Shop List</a></li>
-                                    <li><a class="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                            href="shop-list-left-sidebar.html">Shop List Left Sidebar</a></li>
-                                    <li><a class="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                            href="shop-list-right-sidebar.html">Shop List right Sidebar</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                    href="#">blogs</a>
-                                <ul class="offcanvas-submenu static top-auto hidden w-full visible opacity-100">
-                                    <li><a class="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                            href="blog-grid-3-column.html">Blog Grid 3 Column</a></li>
-                                    <li><a class="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                            href="blog-grid-4-column.html">Blog Grid 4 Column</a></li>
-                                    <li><a class="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                            href="blog-grid-left-sidebar.html">Blog Grid Left Sidebar</a></li>
-                                    <li><a class="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                            href="blog-grid-right-sidebar.html">Blog Grid Right Sidebar</a></li>
-
-                                </ul>
-                            </li>
-                            <li>
-                                <a class="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                    href="#">Product Types</a>
-                                <ul class="offcanvas-submenu static top-auto hidden w-full visible opacity-100">
-                                    <li><a class="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                            href="single-product.html">Shop Single</a></li>
-                                    <li><a class="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                            href="single-product-configurable.html">Shop Variable</a></li>
-                                    <li><a class="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                            href="single-product-affiliate.html">Shop Affiliate</a></li>
-                                    <li><a class="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                            href="single-product-group.html">Shop Group</a></li>
-
-                                </ul>
-                            </li>
-                        </ul>
+                    <li class="relative block"><a href="/about"
+                        class="relative block capitalize font-normal text-base my-2 py-1 font-roboto">About us</a>
                     </li>
-                    <li class="relative block">
-                        <a href="#"
-                            class="block capitalize font-normal text-base my-2 py-1 font-roboto">Blog</a>
-                        <ul class="offcanvas-submenu static top-auto hidden w-full visible opacity-100">
-                            <li>
-                                <a class="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                    href="#">Blog Grid</a>
-                                <ul class="offcanvas-submenu static top-auto hidden w-full visible opacity-100">
-                                    <li>
-                                        <a class="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                            href="blog-grid-3-column.html">Blog Grid 3 column</a>
-                                    </li>
-                                    <li>
-                                        <a class="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                            href="blog-grid-2-column.html">Blog Grid 2 column</a>
-                                    </li>
-                                    <li>
-                                        <a class="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                            href="blog-grid-left-sidebar.html">Blog Grid Left Sidebar</a>
-                                    </li>
-                                    <li>
-                                        <a class="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                            href="blog-grid-right-sidebar.html">Blog Grid Right Sidebar</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class="text-sm py-2 px-4 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                    href="#">Blog List</a>
-                                <ul class="offcanvas-submenu static top-auto hidden w-full visible opacity-100">
-                                    <li>
-                                        <a class="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                            href="blog-list-left-sidebar.html">Blog List Left Sidebar</a>
-                                    </li>
-                                    <li>
-                                        <a class="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                            href="blog-list-right-sidebar.html">Blog List Right Sidebar</a>
-                                    </li>
-                                    <li>
-                                        <a class="text-sm pt-3 px-10 pb-1 text-dark font-light block font-roboto transition-all hover:text-orange"
-                                            href="blog-details.html">Blog details</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                        </ul>
+                    <li class="relative block"><a href="/shop"
+                        class="relative block capitalize font-normal text-base my-2 py-1 font-roboto">Shop</a>
                     </li>
-                    <li class="relative block"><a href="about-us.html"
-                            class="relative block capitalize font-normal text-base my-2 py-1 font-roboto">about Us</a>
+                    <li class="relative block"><a href="#"
+                        class="relative block capitalize font-normal text-base my-2 py-1 font-roboto">Browse Category</a>
                     </li>
-                    <li class="relative block"><a href="contact.html"
-                            class="relative block capitalize font-normal text-base my-2 py-1 font-roboto">Contact
-                            Us</a></li>
+                    <li class="relative block"><a href="/contact"
+                        class="relative block capitalize font-normal text-base my-2 py-1 font-roboto">Contact us</a>
+                    </li>
                 </ul>
             </nav>
             <!-- offcanvas-menu end -->
@@ -330,26 +207,14 @@
                 <ul id="settings-menu">
                     <li class="block mb-3">
                         <a class="flex flex-wrap justify-between mb-3 text-base text-dark hover:text-orange"
-                            href="javascript:void(0)">Currency <i class="icon-arrow-down"></i></a>
-                        <ul class="sub-category hidden py-5 px-6 shadow">
-                            <li class="my-2 block"><a
-                                    class="font-light text-sm tracking-wide text-dark block hover:text-orange"
-                                    href="#">EUR €</a></li>
-                            <li class="my-2 block"><a
-                                    class="font-light text-sm tracking-wide text-dark block hover:text-orange"
-                                    href="#">USD $</a></li>
-                        </ul>
-                    </li>
-                    <li class="block mb-3">
-                        <a class="flex flex-wrap justify-between mb-3 text-base text-dark hover:text-orange"
                             href="javascript:void(0)">Account <i class="icon-arrow-down"></i></a>
                         <ul class="sub-category hidden py-5 px-6 shadow">
                             <li class="my-2 block"><a
                                     class="font-light text-sm tracking-wide text-dark block hover:text-orange"
-                                    href="#">English</a></li>
+                                    href="#">Login</a></li>
                             <li class="my-2 block"><a
                                     class="font-light text-sm tracking-wide text-dark block hover:text-orange"
-                                    href="#">Français</a></li>
+                                    href="#">Register</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -360,7 +225,7 @@
     <!-- offcanvas-mobile-menu end -->
 
 
-    <!-- offcanvas-mobile-menu start -->
+    {{-- <!-- offcanvas-mobile-menu start -->
     <div id="offcanvas-cart"
         class="offcanvas left-auto right-0  transform translate-x-translate-x-full-120 fixed font-normal text-sm top-0 z-50 h-screen w-80 lg:w-96 transition-all ease-in-out duration-300 bg-white overflow-y-auto">
         <div class="p-8">
@@ -438,7 +303,7 @@
         </div>
 
     </div>
-    <!-- offcanvas-mobile-menu end -->
+    <!-- offcanvas-mobile-menu end --> --}}
 
 
     <!-- Header end -->

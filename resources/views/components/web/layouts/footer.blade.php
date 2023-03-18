@@ -41,45 +41,34 @@
                 <div class="grid grid-cols-12 gap-4">
                     <div class="col-span-12 md:col-span-6 lg:col-span-6 mb-10">
                         <a href="index.html" class="inline-block mb-4"><img src="{{ asset('images/logo/logo.png')}} " alt="logo" loading="lazy" width="125" height="45" /></a>
-                        <p class="mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor inci ut labore et dolore</p>
+                        <p class="mb-8">We aim to give our community the chance to read and succeed. We provide proven programs to ensure our community discovers the joy of books, develop critical emergent literacy and language skills,</p>
 
                         <div class="flex flex-wrap items-center justify-start">
                             <a href="#" aria-label="social links" class="text-lg text-dark hover:text-orange mx-3 leading-none transition"><i class="icon-social-facebook"></i></a>
                             <a href="#" aria-label="social links" class="text-lg text-dark hover:text-orange mx-3 leading-none transition"><i class="icon-social-twitter"></i></a>
                             <a href="#" aria-label="social links" class="text-lg text-dark hover:text-orange mx-3 leading-none transition"><i class="icon-social-instagram"></i></a>
-                            <a href="#" aria-label="social links" class="text-lg text-dark hover:text-orange mx-3 leading-none transition"><i class="icon-social-youtube"></i></a>
-                            <a href="#" aria-label="social links" class="text-lg text-dark hover:text-orange mx-3 leading-none transition"><i class="icon-social-dribbble"></i></a>
                         </div>
                     </div>
 
                     <div class="col-span-6 md:col-span-6 lg:col-span-2 mb-10">
                         <h3 class="text-primary font-bold text-md capitalize leading-none mb-8 font-playfair">Information</h3>
                         <ul>
-                            <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all" href="#">Best Value</a></li>
-                            <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all" href="#">Your Order</a></li>
                             <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all" href="#">Terms Condition</a></li>
-                            <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all" href="#">Contact us</a></li>
-                            <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all" href="#">Manufactureres</a></li>
+                            <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all" href="/contact">Contact us</a></li>
                         </ul>
                     </div>
                     <div class="col-span-6 md:col-span-6 lg:col-span-2 mb-10">
                         <h3 class="text-primary font-bold text-md capitalize leading-none mb-8 font-playfair">Quick Links</h3>
                         <ul>
-                            <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all" href="#">New Brands</a></li>
-                            <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all" href="#">News &amp; Blog</a></li>
                             <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all" href="#">Our Office</a></li>
                             <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all" href="#">Our Store</a></li>
-                            <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all" href="#">Return Policy</a></li>
                         </ul>
                     </div>
                     <div class="col-span-12 md:col-span-6 lg:col-span-2 mb-10">
-                        <h3 class="text-primary font-bold text-md capitalize leading-none mb-8 font-playfair">Main Menu</h3>
+                        <h3 class="text-primary font-bold text-md capitalize leading-none mb-8 font-playfair">Our Branches</h3>
                         <ul>
-                            <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all" href="#">Best Value</a></li>
-                            <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all" href="#">Your Order</a></li>
-                            <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all" href="#">Terms &amp; Condition</a></li>
-                            <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all" href="#">Contact us</a></li>
-                            <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all" href="#">Manufactureres</a></li>
+                            <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all" href="#">Dar es Salaam</a></li>
+                            <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all" href="#">Tanzania</a></li>
                         </ul>
                     </div>
                 </div>
@@ -95,7 +84,7 @@
             <div class="container">
                 <div class="grid md:grid-cols-2 gap-4">
                     <div class="flex order-last md:order-first flex-wrap items-center justify-center md:justify-start">
-                        <p class="text-white flex flex-wrap items-center text-sm lg:text-base">&copy; 2022 Sinp. Made with <i class="icon-heart mx-2 text-orange"></i> by<a href="#" class="ml-1 transition hover:text-orange">Codecarnival</a>.</p>
+                        <p class="text-white flex flex-wrap items-center text-sm lg:text-base">&copy; 2023 END Vision Publishers.</p>
                     </div>
 
                     <div class="flex flex-wrap items-center justify-center md:justify-end">

@@ -33,15 +33,15 @@
                     <h2 class="font-semibold text-dark text-4xl mb-14 capitalize">Contact Us</h2>
                     <div class="flex flex-wrap items-center mb-8">
                         <span class="text-dark text-4xl mr-5"><i class="icon-location-pin"></i></span>
-                        <p class="flex-1">Address goes here, street, Crossroad 123.</p>
+                        <p class="flex-1">Dar Es Salaam, Tanzania</p>
                     </div>
                     <div class="flex flex-wrap items-center mb-8">
                         <span class="text-dark text-4xl mr-5"><i class="icon-envelope"></i></span>
-                        <a href="mailto:info@example.com" class="flex-1">info@example.com / info@example.com</a>
+                        <a href="mailto:info@example.com" class="flex-1">info@edvisionpublishing.co.tz / sales@info@edvisionpublishing.co.tz</a>
                     </div>
                     <div class="flex flex-wrap items-center">
                         <span class="text-dark text-4xl mr-5"><i class="icon-screen-smartphone"></i></span>
-                        <a href="tel:01234567890" class="flex-1">+1 35 776 859 011 / +1 35 776 859 011</a>
+                        <a href="tel:01234567890" class="flex-1">+255 859 011 / +255 859 011</a>
                     </div>
                 </div>
 

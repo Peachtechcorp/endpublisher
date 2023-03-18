@@ -3,6 +3,7 @@
 @section('content')
     <div class="">
         <x-web.home.slider />
+        <x-web.home.values />
         <x-web.home.product-categories /> <!-- Product section start -->
         @foreach ($categories as $category)
             <section class="product-section pb-24">

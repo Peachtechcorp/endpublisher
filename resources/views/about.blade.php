@@ -44,6 +44,7 @@
             </div>
         </div>
     </section>
+    <x-web.about.testmonials />
 
 
     <!-- Feartured section end -->
