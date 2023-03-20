@@ -4,62 +4,8 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-5">
                 <div>
                     <div>
-                        <h3 class="text-md font-semibold capitalize mb-8">calculate shipping</h3>
-                        <form action="#">
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-5">
-                                <div class="col-span-2 sm:col-span-1">
-                                    <select
-                                        class="border border-solid border-gray-300 bg-transparent w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base">
-                                        <option>Select country</option>
-                                        <option>Azerbaijan</option>
-                                        <option>Bahamas</option>
-                                        <option>Bahrain</option>
-                                        <option>Bangladesh</option>
-                                        <option>Barbados</option>
-                                    </select>
-                                </div>
+                        <h3 class="text-md font-semibold capitalize mb-8"></h3>
 
-                                <div class="col-span-2 sm:col-span-1">
-                                    <select
-                                        class="border border-solid border-gray-300 bg-transparent w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base">
-                                        <option>Select State</option>
-                                        <option>Azerbaijan</option>
-                                        <option>Bahamas</option>
-                                        <option>Bahrain</option>
-                                        <option>Bangladesh</option>
-                                        <option>Barbados</option>
-                                    </select>
-                                </div>
-
-                                <div class="col-span-2 sm:col-span-1">
-                                    <input
-                                        class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                        placeholder="Postcode / ZIP" type="text">
-                                </div>
-
-                                <div class="col-span-2 sm:col-span-1">
-                                    <a href="#"
-                                        class="inline-block bg-dark leading-none py-4 px-5 md:px-8 text-sm text-white transition-all hover:bg-orange uppercase font-semibold hover:text-white mb-5 sm:mb-0">estimate</a>
-                                </div>
-
-                                <div class="col-span-2">
-                                    <h3 class="text-md font-semibold capitalize mb-8">Discount coupon Code</h3>
-                                </div>
-
-                                <div class="col-span-2 sm:col-span-1">
-                                    <input
-                                        class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                        placeholder="coupon Code" type="text">
-                                </div>
-
-                                <div class="col-span-2 sm:col-span-1">
-                                    <a href="#"
-                                        class="inline-block bg-dark leading-none py-4 px-5 md:px-8 text-sm text-white transition-all hover:bg-orange uppercase font-semibold hover:text-white mb-8 sm:mb-0">apply
-                                        code</a>
-                                </div>
-
-                            </div>
-                        </form>
                     </div>
                 </div>
                 <div class="mt-4 lg:mt-0">

@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Book;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Nette\Utils\Random;
 
 class HomePageController extends Controller
 {
@@ -40,5 +41,25 @@ class HomePageController extends Controller
     public function checkout()
     {
         return view("checkout");
+    }
+
+    public function about()
+    {
+        return view("about");
+    }
+
+    public function contact()
+    {
+        return view("contact");
+    }
+
+    public function rand()
+    {
+        $value = [12];
+        for ($i = 0; $i <= 12; $i++) {
+            $rand = rand(1, 3);
+            $value[$i] = $rand;
+        }
+        print_r($value);
     }
 }
