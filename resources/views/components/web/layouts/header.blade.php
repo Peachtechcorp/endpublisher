@@ -38,10 +38,10 @@
                                     href="/shop">Shop</a></li>
                             <li class="main-menu__item"><a
                                     class="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all"
-                                    href="/#">About Us</a></li>
+                                    href="{{ route('about') }}">About Us</a></li>
                             <li class="main-menu__item"><a
                                     class="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all"
-                                    href="/#">Contact Us</a></li>
+                                    href="{{ route('contact') }}">Contact Us</a></li>
 
                         </ul>
                     </nav>
@@ -51,28 +51,24 @@
                 <div class="w-6/12 lg:w-3/12">
 
                     <ul class="flex items-center justify-end">
-                        @guest
-                        @else
-                            <li class="ml-6 hidden lg:block">
-                                <button
-                                    class="search-toggle text-right text-primary text-md hover:text-orange transition-all"
-                                    aria-label="icon-settings">
-                                    <i class="icon-magnifier"></i>
-                                </button>
-                            </li>
-                            <li class="ml-6">
-                                <a href="{{ route('cart') }}"
-                                    class="text-primary text-md hover:text-orange transition-all relative offcanvas-toggle">
-                                    <span
-                                        class="w-5 h-5 bg-dark text-white text-sm rounded-full font-normal flex flex-wrap items-center justify-center absolute -top-3 left-2 leading-none">
-                                        1
-                                    </span>
-                                    <i class="icon-bag"></i>
 
-                                </a>
+                        <li class="ml-6 hidden lg:block">
+                            <button
+                                class="search-toggle text-right text-primary text-md hover:text-orange transition-all"
+                                aria-label="icon-settings">
+                                <i class="icon-magnifier"></i>
+                            </button>
+                        </li>
+                        <li class="ml-6">
+                            <a href="{{ route('cart') }}"
+                                class="text-primary text-md hover:text-orange transition-all ">
 
-                            </li>
-                        @endguest
+                                <i class="icon-bag"></i>
+
+                            </a>
+
+                        </li>
+
                         <li id="toggle-menu" class="ml-6 hidden lg:block relative">
                             <button class="text-primary text-md hover:text-orange transition-all toggle-menu"
                                 aria-label="icon-settings">
@@ -190,16 +186,18 @@
                             class="relative block capitalize font-normal text-base my-2 py-1 font-roboto">Home</a>
                     </li>
                     <li class="relative block"><a href="/about"
-                        class="relative block capitalize font-normal text-base my-2 py-1 font-roboto">About us</a>
+                            class="relative block capitalize font-normal text-base my-2 py-1 font-roboto">About us</a>
                     </li>
                     <li class="relative block"><a href="/shop"
-                        class="relative block capitalize font-normal text-base my-2 py-1 font-roboto">Shop</a>
+                            class="relative block capitalize font-normal text-base my-2 py-1 font-roboto">Shop</a>
                     </li>
                     <li class="relative block"><a href="#"
-                        class="relative block capitalize font-normal text-base my-2 py-1 font-roboto">Browse Category</a>
+                            class="relative block capitalize font-normal text-base my-2 py-1 font-roboto">Browse
+                            Category</a>
                     </li>
                     <li class="relative block"><a href="/contact"
-                        class="relative block capitalize font-normal text-base my-2 py-1 font-roboto">Contact us</a>
+                            class="relative block capitalize font-normal text-base my-2 py-1 font-roboto">Contact
+                            us</a>
                     </li>
                 </ul>
             </nav>
