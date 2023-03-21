@@ -43,14 +43,7 @@
                                                                 <ul
                                                                     class="flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden">
 
-                                                                    <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                                        <a href="whishlist.html"
-                                                                            class="text-dark flex items-center justify-center text-md hover:text-orange"
-                                                                            data-tippy-content="Add to wishlist"
-                                                                            aria-label="wishlist">
-                                                                            <i class="icon-heart"></i>
-                                                                        </a>
-                                                                    </li>
+
                                                                     <li class="py-4 pl-7 md:py-5 md:pl-8">
                                                                         <a href="{{ route('book.view', ['book' => $book]) }}"
                                                                             class="text-dark flex items-center justify-center text-md hover:text-orange"

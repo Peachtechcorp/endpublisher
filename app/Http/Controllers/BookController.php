@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Helpers\Utility;
 use App\Models\Book;
+use App\Models\Brand;
 use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
@@ -72,7 +73,8 @@ class BookController extends Controller
     public function show(Book $book)
     {
         $categories = Category::all();
-        return view('admin.books.show', compact('book', 'categories'));
+        $brands = Brand::all();
+        return view('admin.books.show', compact('book', 'categories', 'brands'));
     }
 
     /**

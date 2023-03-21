@@ -64,6 +64,39 @@
 
 
 
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="pull-right mb-3 ">
+
+
+                                        </div>
+                                        <div class="">
+                                            <h4> Update Book Brand</h4>
+                                        </div>
+                                        <hr />
+
+                                        <form action="{{ route('books.assign-brand', ['book' => $book]) }}" method="post">
+                                            @csrf
+                                            <table class="table table-bordered">
+                                                @foreach ($brands as $brand)
+                                                    <tr>
+                                                        <th>{{ $loop->iteration }}</th>
+                                                        <th>{{ $brand->name }}</th>
+                                                        <th><input class="form-check-input" name="brand_id[]"
+                                                                type="checkbox" value="{{ $brand->id }}"
+                                                                id="flexCheckDefault"
+                                                                {{ $book->brands->contains('name', $brand->name) ? ' checked' : '' }}>
+                                                        </th>
+                                                    </tr>
+                                                @endforeach
+                                            </table>
+                                            <div class="pull-right mb-3 ">
+                                                <button type="submit" class="btn btn-success">Save</button>
+                                            </div>
+                                        </form>
+
+
+
                                     </div> <!-- end card-box -->
                                 </div> <!-- end card-->
                             </div><!-- end col -->

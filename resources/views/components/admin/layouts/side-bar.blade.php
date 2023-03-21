@@ -18,9 +18,8 @@
                             <li class="menu-title">Navigation</li>
 
                             <li>
-                                <a href="#">
+                                <a href="{{ route('home') }}">
                                     <i class="fe-airplay"></i>
-                                    <span class="badge badge-success float-right">01</span>
                                     <span> Dashboard </span>
                                 </a>
                             </li>
@@ -47,6 +46,12 @@
                                 <a href="{{ route('orderItems.index') }}">
                                     <i class="fe-type"></i>
                                     <span> Orders </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('brands.index') }}">
+                                    <i class="fe-type"></i>
+                                    <span> Brand </span>
                                 </a>
                             </li>
                         </ul>

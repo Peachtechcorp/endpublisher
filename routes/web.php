@@ -1,9 +1,11 @@
 <?php
 
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\BrandController;
 use App\Http\Controllers\Cart\ShopCartController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Inv\AssignBrandController;
 use App\Http\Controllers\Inv\AssignCategoryController;
 use App\Http\Controllers\Inv\ContactEmail;
 use App\Http\Controllers\OrderController;
@@ -42,13 +44,6 @@ Route::get("/rand", [App\Http\Controllers\Web\HomePageController::class, "rand"]
 Route::get("/books/categories/{category}", [App\Http\Controllers\Web\HomePageController::class, 'category'])->name("book.category");
 Route::get("/books/View/{book}", [App\Http\Controllers\Web\HomePageController::class, 'showBook'])->name("book.view");
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::resource('books', BookController::class);
-Route::resource('orders', OrderController::class);
-Route::resource('products', ProductController::class);
-
-Route::resource('categories', CategoryController::class);
-
-Route::post("books/{book}/assign-category", AssignCategoryController::class)->name("books.assign-category");
 
 
 Auth::routes();
@@ -60,4 +55,11 @@ Route::post("/books/shop-cart/{book}", ShopCartController::class)->name("cart.ad
 Route::middleware("auth")->group(function () {
     Route::get("/checkout", [App\Http\Controllers\Web\HomePageController::class, 'checkout'])->name("checkout");
     Route::resource('orderItems', OrderItemController::class);
+    Route::resource('brands', BrandController::class);
+    Route::resource('books', BookController::class);
+    Route::resource('orders', OrderController::class);
+    Route::resource('products', ProductController::class);
+    Route::resource('categories', CategoryController::class);
+    Route::post("books/{book}/assign-category", AssignCategoryController::class)->name("books.assign-category");
+    ROute::post("books/{book}/assign-brand", AssignBrandController::class)->name("books.assign-brand");
 });

@@ -27,6 +27,11 @@ class Book extends Model
     {
         return $this->belongsToMany(Category::class, 'book_categories', 'book_id', 'category_id');
     }
+
+    public function brands()
+    {
+        return $this->belongsToMany(Brand::class, 'books_has_brands', 'book_id', 'brand_id');
+    }
     protected function featuredImage(): Attribute
     {
         return Attribute::make(fn ($val) => Storage::url($val));
