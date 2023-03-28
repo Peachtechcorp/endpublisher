@@ -85,8 +85,8 @@
                                         <div class="row g-3">
                                             <div class="col-sm-3">
                                                 <strong>Image:</strong>
-                                                <input type="file" required name="featured_image" class="form-control"
-                                                    id="inputGroupFile01" required>
+                                                <input type="file" name="featured_image" class="form-control"
+                                                    id="inputGroupFile01">
                                             </div>
                                             <div class="col-sm-3">
                                                 <strong>ISBN:</strong>
@@ -110,9 +110,58 @@
                                         <div class="row g-3">
                                             <div class="col-12 mt-2">
                                                 <strong>Description:</strong>
-                                                <textarea type="text" name="description" class="form-control" id="inputAddress" placeholder="Description">
+                                                <textarea type="text" name="description" rows="4" class="form-control" id="inputAddress"
+                                                    placeholder="Description">
                                                    {{ isset($book) ? $book->description : old('description') }}
                                                 </textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row g-3">
+                                            <div class="col-12 mt-2">
+                                                <strong>Select Categories:</strong>
+
+                                                <div class="form-check">
+                                                    @foreach ($categories as $category)
+                                                        <div class="col"> <input class="form-check-input"
+                                                                name="category_id[]" type="checkbox"
+                                                                value="{{ $category->id }}"
+                                                                {{ isset($book) ? ($book->categoryies->contains('name', $category->name) ? ' checked' : '') : '' }}>
+                                                        </div>
+
+                                                        <div class="col">
+
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                <div class="ml-5"></div> {{ $category->name }}
+                                                            </label>
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+
+
+
+
+
+                                            </div>
+                                        </div>
+                                        <div class="row g-3">
+                                            <div class="col-12 mt-2">
+                                                <strong>Select Brands:</strong>
+                                                <div class="form-check">
+                                                    @foreach ($brands as $brand)
+                                                        <div class="col">
+                                                            <input class="form-check-input" name="brand_id[]"
+                                                                type="checkbox" value="{{ $brand->id }}"
+                                                                id="flexCheckDefault"
+                                                                {{ isset($book) ? ($book->brands->contains('name', $brand->name) ? ' checked' : '') : '' }}>
+                                                        </div>
+                                                        <div class="col">
+
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                <div class="ml-5"></div> {{ $brand->name }}
+                                                            </label>
+                                                        </div>
+                                                    @endforeach
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="row g-3 mt-3">

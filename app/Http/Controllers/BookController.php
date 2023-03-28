@@ -8,6 +8,7 @@ use App\Models\Brand;
 use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class BookController extends Controller
 {
@@ -30,7 +31,9 @@ class BookController extends Controller
     public function create()
     {
         $products = Product::all();
-        return view('admin.books.create', compact('products'));
+        $categories = Category::all();
+        $brands = Brand::all();
+        return view('admin.books.create', compact('products', 'brands', 'categories'));
     }
 
     /**
@@ -53,12 +56,17 @@ class BookController extends Controller
             'price' => 'required',
             'featured_image' => 'required',
         ]);
+        DB::beginTransaction();
         $book = new Book();
         $book->fill($request->input());
         if (request()->hasFile('featured_image')) {
             $book->featured_image = Utility::UploadFile('featured_image');
         }
         $book->save();
+        $book->brands()->sync($request->input('brand_id'));
+        $book->categoryies()->sync($request->input("category_id"));
+
+        DB::commit();
 
         return redirect()->route('books.index')
             ->with('Success' . 'Book created successfully');
@@ -86,7 +94,9 @@ class BookController extends Controller
     public function edit(Book $book)
     {
         $products = Product::all();
-        return view('admin.books.create', compact('book', 'products'));
+        $categories = Category::all();
+        $brands = Brand::all();
+        return view('admin.books.create', compact('book', 'products', 'brands', 'categories'));
     }
 
     /**
@@ -105,6 +115,8 @@ class BookController extends Controller
         if (request()->hasFile('featured_image')) {
             $book->featured_image = Utility::UploadFile('featured_image');
         }
+        $book->brands()->sync($request->input('brand_id'));
+        $book->categoryies()->sync($request->input("category_id"));
         $book->update();
 
         return redirect()->route('books.index')
