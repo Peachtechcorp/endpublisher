@@ -4,8 +4,7 @@
 
             <div class="grid grid-rows-1 grid-flow-col gap-4">
                 <div class="text-center mb-14">
-                    <h2 class="font-playfair font-bold text-primary text-3xl md:text-4xl lg:text-xl mb-4">New Arrivals</h2>
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                    <h2 class="font-playfair font-bold text-primary text-3xl md:text-4xl lg:text-xl mb-4">Similar Books</h2>
                 </div>
             </div>
             <div class="grid grid-cols-12 gap-4">

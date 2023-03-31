@@ -25,223 +25,46 @@
                 <div class="col-span-12 lg:col-span-7">
                     <div>
                         <h3 class="text-lg font-semibold mb-5">Billing Details</h3>
-                        <form class="personal-information" action="assets/php/contact.php">
+                        <form class="personal-information" action="{{ route('orderItems.store') }}" method="POST">
+                            @csrf
+                            <input type="hidden" name="user_id" value="{{ Auth::user()->id }}" />
                             <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-5">
-                                <div>
-                                    <div>
-                                        <label class="mb-3 inline-block">First Name</label>
-                                        <input
-                                            class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                            type="text">
-                                    </div>
-                                </div>
-                                <div>
-                                    <div>
-                                        <label class="mb-3 inline-block">Last Name</label>
-                                        <input
-                                            class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                            type="text">
-                                    </div>
-                                </div>
-                                <div class="lg:col-span-2">
-                                    <div>
-                                        <label class="mb-3 inline-block">Company Name</label>
-                                        <input
-                                            class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                            type="text">
-                                    </div>
-                                </div>
-                                <div class="lg:col-span-2">
-                                    <div>
-                                        <label class="mb-3 inline-block">Country</label>
-                                        <select
-                                            class="bg-transparent border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base">
-                                            <option>Select a country</option>
-                                            <option>Azerbaijan</option>
-                                            <option>Bahamas</option>
-                                            <option>Bahrain</option>
-                                            <option>Bangladesh</option>
-                                            <option>Barbados</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="lg:col-span-2">
-                                    <div>
-                                        <label class="mb-3 inline-block">Street Address</label>
-                                        <input
-                                            class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                            placeholder="House number and street name" type="text">
-                                        <input
-                                            class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                            placeholder="Apartment, suite, unit etc." type="text">
-                                    </div>
-                                </div>
-                                <div class="lg:col-span-2">
-                                    <div>
-                                        <label class="mb-3 inline-block">Town / City</label>
-                                        <input
-                                            class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                            type="text">
-                                    </div>
-                                </div>
-                                <div>
-                                    <div>
-                                        <label class="mb-3 inline-block">State / County</label>
-                                        <input
-                                            class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                            type="text">
-                                    </div>
-                                </div>
-                                <div>
-                                    <div>
-                                        <label class="mb-3 inline-block">Postcode / ZIP</label>
-                                        <input
-                                            class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                            type="text">
-                                    </div>
-                                </div>
-                                <div>
-                                    <div>
-                                        <label class="mb-3 inline-block">Phone</label>
-                                        <input
-                                            class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                            type="text">
-                                    </div>
-                                </div>
-                                <div>
-                                    <div>
-                                        <label class="mb-3 inline-block">Email Address</label>
-                                        <input
-                                            class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                            type="text">
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
 
-                        <div class="checkout-account mb-5">
-                            <input id="id2" class="checkout-toggle2" type="checkbox">
-                            <label for="id2">Create an account?</label>
-                        </div>
-                        <div class="checkout-account-toggle open-toggle2 mb-30 hidden">
-                            <input
-                                class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                placeholder="Email address" type="email">
-                            <input
-                                class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                placeholder="Password" type="password">
-                            <button
-                                class="text-center leading-none uppercase text-white text-sm bg-dark px-6 py-4 transition-all hover:bg-orange font-semibold mb-5"
-                                type="submit" aria-label="button">
-                                register
-                            </button>
-                        </div>
-                        <div class="additional-info-wrap">
-                            <h4 class="text-base font-semibold">Additional information</h4>
-                            <div class="additional-info">
-                                <label class="mb-3 inline-block">Order notes</label>
-                                <textarea
-                                    class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-36 focus:outline-none text-base"
-                                    placeholder="Notes about your order, e.g. special notes for delivery." name="message"></textarea>
-                            </div>
-                        </div>
-                        <div class="checkout-account mt-25">
-                            <input id="ship" class="checkout-toggle" type="checkbox">
-                            <label for="ship">Ship to a different address?</label>
-                        </div>
-                        <div class="different-address open-toggle mt-5 hidden">
-                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-5">
-                                <div>
-                                    <div>
-                                        <label class="mb-3 inline-block">First Name</label>
-                                        <input
-                                            class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                            type="text">
-                                    </div>
-                                </div>
-                                <div>
-                                    <div>
-                                        <label class="mb-3 inline-block">Last Name</label>
-                                        <input
-                                            class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                            type="text">
-                                    </div>
-                                </div>
+
                                 <div class="lg:col-span-2">
                                     <div>
-                                        <label class="mb-3 inline-block">Company Name</label>
+                                        <label class="mb-3 inline-block"> Name</label>
                                         <input
                                             class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                            type="text">
+                                            type="text" value="{{ Auth::user()->name }}" readonly>
                                     </div>
                                 </div>
-                                <div class="lg:col-span-2">
-                                    <div>
-                                        <label class="mb-3 inline-block">Country</label>
-                                        <select
-                                            class="bg-transparent border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base">
-                                            <option>Select a country</option>
-                                            <option>Azerbaijan</option>
-                                            <option>Bahamas</option>
-                                            <option>Bahrain</option>
-                                            <option>Bangladesh</option>
-                                            <option>Barbados</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="lg:col-span-2">
-                                    <div>
-                                        <label class="mb-3 inline-block">Street Address</label>
-                                        <input
-                                            class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                            placeholder="House number and street name" type="text">
-                                        <input
-                                            class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                            placeholder="Apartment, suite, unit etc." type="text">
-                                    </div>
-                                </div>
-                                <div class="lg:col-span-2">
-                                    <div>
-                                        <label class="mb-3 inline-block">Town / City</label>
-                                        <input
-                                            class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                            type="text">
-                                    </div>
-                                </div>
-                                <div>
-                                    <div>
-                                        <label class="mb-3 inline-block">State / County</label>
-                                        <input
-                                            class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                            type="text">
-                                    </div>
-                                </div>
-                                <div>
-                                    <div>
-                                        <label class="mb-3 inline-block">Postcode / ZIP</label>
-                                        <input
-                                            class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                            type="text">
-                                    </div>
-                                </div>
-                                <div>
-                                    <div>
-                                        <label class="mb-3 inline-block">Phone</label>
-                                        <input
-                                            class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                            type="text">
-                                    </div>
-                                </div>
+
+
+
+
+
+
+
                                 <div>
                                     <div>
                                         <label class="mb-3 inline-block">Email Address</label>
                                         <input
                                             class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
-                                            type="text">
+                                            type="text" value="{{ Auth::user()->email }}" readonly>
+                                    </div>
+                                </div>
+                                <div class="lg:col-span-2">
+                                    <div>
+                                        <label class="mb-3 inline-block"> Description</label>
+                                        <textarea
+                                            class="border border-solid border-gray-300 w-full py-1 px-5 mb-5 placeholder-current text-dark h-12 focus:outline-none text-base"
+                                            name="description" rows="10"></textarea>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+
+
                     </div>
                 </div>
                 <div class="col-span-12 lg:col-span-5 mt-4 mt-lg-0">
@@ -254,8 +77,14 @@
                                     <li class="text-base font-semibold">Total</li>
                                 </ul>
                                 <ul class="border-t border-b border-gray-600 py-5 my-5">
-                                    @foreach (session()->get('cart', []) as $item)
+                                    @foreach (session()->get('cart', []) as $key => $item)
                                         <li class="flex flex-wrap items-center justify-between">
+                                            <input type="hidden" name="order_items[{{ $key }}][product_id]"
+                                                value="{{ $item['book_id'] }}" />
+                                            <input type="hidden" name="order_items[{{ $key }}][price]"
+                                                value="{{ $item['price'] }}" />
+                                            <input type="hidden" name="order_items[{{ $key }}][quantity]"
+                                                value="{{ $item['quantity'] }}" />
                                             <span>{{ $item['name'] }}</span>
                                             <span>TSH {{ $item['price'] }} /=</span>
                                         </li>
@@ -269,6 +98,7 @@
                                 <ul
                                     class="flex flex-wrap items-center justify-between border-t border-b border-gray-600 py-5 my-5">
                                     <li class="text-base font-semibold">Total</li>
+                                    <input type="hidden" name="total" value="{{ session()->get('total') }}">
                                     <li class="text-base font-semibold">TSH {{ session()->get('total') }} /=</li>
                                 </ul>
                             </div>
@@ -311,10 +141,13 @@
 
                         </div>
                         <div class="mt-6">
-                            <a class="block w-full text-center leading-none uppercase text-white text-sm bg-dark px-5 py-5 transition-all hover:bg-orange font-semibold"
-                                href="#">Place Order</a>
+                            <button
+                                class="block w-full text-center leading-none uppercase text-white text-sm bg-dark px-5 py-5 transition-all hover:bg-orange font-semibold"
+                                type="submit">Place Order</button>
                         </div>
                     </div>
+                    </form>
+
                 </div>
             </div>
         </div>

@@ -1,11 +1,12 @@
             <!-- Topbar Start -->
-    <div class="navbar-custom">
+            <div class="navbar-custom">
                 <ul class="list-unstyled topnav-menu float-right mb-0">
                     <li class="dropdown notification-list">
-                        <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown"
+                            href="#" role="button" aria-haspopup="false" aria-expanded="false">
                             {{-- <img src="assets/images/users/avatar-4.jpg" alt="user-image" class="rounded-circle"> --}}
                             <span class="pro-user-name ml-1">
-                                {{ Auth::user()->name }}<i class="mdi mdi-chevron-down"></i> 
+                                {{ Auth::user()->name }}<i class="mdi mdi-chevron-down"></i>
                             </span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
@@ -19,38 +20,33 @@
                             <!-- item-->
                             <div class="dropdown-item noti-title">
                                 @guest
-                                @if (Route::has('login'))
-                
+                                    @if (Route::has('login'))
                                         <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                    
-                                @endif
-    
-                                @if (Route::has('register'))
-                
+                                    @endif
+
+                                    @if (Route::has('register'))
                                         <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                    
-                                @endif
-    
+                                    @endif
                                 @else
-                                <div class="px-2">
-                                    {{-- <a id="navbarDropdown" class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    <div class="px-2">
+                                        {{-- <a id="navbarDropdown" class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                         {{ Auth::user()->name }}
                                     </a> --}}
-    
-    
+
+
                                         <a class="" href="{{ route('logout') }}"
-                                           onclick="event.preventDefault();
+                                            onclick="event.preventDefault();
                                                          document.getElementById('logout-form').submit();">
                                             {{ __('Logout') }}
                                         </a>
-    
+
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                             @csrf
                                         </form>
-                                </div>
-    
-                                
-                            @endguest
+                                    </div>
+
+
+                                @endguest
                             </div>
 
 
@@ -72,18 +68,7 @@
                             <i class="fe-menu"></i>
                         </button>
                     </li>
-                    <li class="app-search d-none d-sm-block">
-                        <form>
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search...">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary" type="submit">
-                                        <i class="fe-search"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </li>
+
                 </ul>
-    </div>
+            </div>
             <!-- end Topbar -->

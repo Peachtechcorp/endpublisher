@@ -31,40 +31,8 @@
                                         <a class="btn btn-primary" href="{{ route('books.index') }}"> Back</a>
 
                                     </div>
-                                    <div class="card-body">
-                                        <div class="pull-right mb-3 ">
 
-
-                                        </div>
-                                        <div class="">
-                                            <h4> Update Book Categories</h4>
-                                        </div>
-                                        <hr />
-
-                                        <form action="{{ route('books.assign-category', ['book' => $book]) }}"
-                                            method="post">
-                                            @csrf
-                                            <table class="table table-bordered">
-                                                @foreach ($categories as $category)
-                                                    <tr>
-                                                        <th>{{ $loop->iteration }}</th>
-                                                        <th>{{ $category->name }}</th>
-                                                        <th><input class="form-check-input" name="category_id[]"
-                                                                type="checkbox" value="{{ $category->id }}"
-                                                                id="flexCheckDefault"
-                                                                {{ $book->categoryies->contains('name', $category->name) ? ' checked' : '' }}>
-                                                        </th>
-                                                    </tr>
-                                                @endforeach
-                                            </table>
-                                            <div class="pull-right mb-3 ">
-                                                <button type="submit" class="btn btn-success">Save</button>
-                                            </div>
-                                        </form>
-
-
-
-                                    </div> <!-- end card-box -->
+                                    <!-- end card-box -->
                                 </div> <!-- end card-->
                             </div><!-- end col -->
                         </div>

@@ -90,28 +90,6 @@
                                                         class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
                                                         <ul
                                                             class="flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden">
-                                                            <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                                <a href="#modal-cart"
-                                                                    class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle"
-                                                                    data-tippy-content="Quick View" aria-label="Quick View">
-                                                                    <i class="icon-magnifier"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                                <a href="whishlist.html"
-                                                                    class="text-dark flex items-center justify-center text-md hover:text-orange"
-                                                                    data-tippy-content="Add to wishlist"
-                                                                    aria-label="wishlist">
-                                                                    <i class="icon-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="py-4 pl-7 md:py-5 md:pl-8">
-                                                                <a href="compare.html"
-                                                                    class="text-dark flex items-center justify-center text-md hover:text-orange"
-                                                                    data-tippy-content="Compare" aria-label="Compare">
-                                                                    <i class="icon-refresh"></i>
-                                                                </a>
-                                                            </li>
                                                             <li class="py-4 pl-7 pr-7 md:py-5 md:pl-8 md:pr-8">
                                                                 <a href="#modal-addto-cart"
                                                                     class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle"
@@ -163,14 +141,6 @@
                                                         class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
                                                         <ul
                                                             class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
-                                                            <li>
-                                                                <a href="#modal-cart"
-                                                                    class="text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4"
-                                                                    aria-label="quick veiw"
-                                                                    data-tippy-content="Quick View">
-                                                                    <i class="icon-magnifier-add"></i>
-                                                                </a>
-                                                            </li>
                                                         </ul>
                                                     </div>
 
@@ -188,6 +158,7 @@
 
                                                     <ul class="flex items-center">
                                                         <li class="mr-2">
+
                                                             <a href="{{ route('book.view', ['book' => $book]) }}"
                                                                 class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
                                                                 aria-label="Add to wishlist"
@@ -209,15 +180,9 @@
                                                                 </a>
                                                             </form>
 
+
                                                         </li>
-                                                        <li class="mr-2">
-                                                            <a href="#"
-                                                                class="text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange"
-                                                                data-tippy-content="Add to wishlist"
-                                                                aria-label="wishlist">
-                                                                <i class="icon-heart"></i>
-                                                            </a>
-                                                        </li>
+
 
                                                     </ul>
                                                 </div>

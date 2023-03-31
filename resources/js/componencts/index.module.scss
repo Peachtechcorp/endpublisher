@@ -1,0 +1,16 @@
+.spinner {
+    span {
+        border: solid 1px gray;
+        padding: 5px 10px;
+    }
+
+    span.count {
+        border-left: 0;
+        border-right: 0;
+    }
+
+    span.dec,
+    span.inc {
+        cursor: pointer;
+    }
+}
