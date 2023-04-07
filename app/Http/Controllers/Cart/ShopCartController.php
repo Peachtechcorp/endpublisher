@@ -13,6 +13,7 @@ class ShopCartController extends Controller
      */
     public function __invoke(Request $request, Book $book)
     {
+        $sum = 0;
         $cart = session()->get("cart", []);
         $total = session()->get('total', 0);
         if (isset($cart[$book->id])) {
@@ -26,10 +27,11 @@ class ShopCartController extends Controller
                 "book_id" => $book->id,
             ];
         }
-        foreach (session()->get('cart', []) as $item) {
-            $total += $item['price'] * $item['quantity'];
-        }
+        foreach ($cart as $item) {
 
+            $sum = $item['price'] * $item['quantity'];
+        }
+        $total = $total + $sum;
         session()->put('total', $total);
         session()->put('cart', $cart);
         return redirect()->back();
