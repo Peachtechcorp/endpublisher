@@ -64,7 +64,7 @@
                                 class="text-primary text-md hover:text-orange transition-all ">
 
                                 <i class="icon-bag"></i>
-
+                                {{ is_array(session()->get('cart')) ? count(session()->get('cart')) : 0 }}
                             </a>
 
                         </li>

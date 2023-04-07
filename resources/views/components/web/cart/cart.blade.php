@@ -77,7 +77,8 @@
                                     </td>
                                     <td class="p-3 border border-solid border-gray-600 text-center">
 
-                                        <a href="#" class="inline-block mx-1 hover:text-orange transition-all"><i
+                                        <a href="{{ route('cart.remove', ['book' => $item['book_id']]) }}"
+                                            class="inline-block mx-1 hover:text-orange transition-all"><i
                                                 class="icon-close"></i></a>
                                     </td>
                                 </tr>

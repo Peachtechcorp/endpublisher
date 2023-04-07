@@ -26,8 +26,8 @@ class ShopCartController extends Controller
                 "book_id" => $book->id,
             ];
         }
-        foreach ($cart as $item) {
-            $total += $item['quantity'] * $item['price'];
+        foreach (session()->get('cart', []) as $item) {
+            $total += $item['price'] * $item['quantity'];
         }
 
         session()->put('total', $total);

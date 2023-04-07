@@ -7,6 +7,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Inv\AssignBrandController;
 use App\Http\Controllers\Inv\AssignCategoryController;
+use App\Http\Controllers\Inv\CarRemoveController;
 use App\Http\Controllers\Inv\ContactEmail;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\OrderItemController;
@@ -48,7 +49,7 @@ Route::get("/rand", [App\Http\Controllers\Web\HomePageController::class, "rand"]
 Route::get("/books/categories/{category}", [App\Http\Controllers\Web\HomePageController::class, 'category'])->name("book.category");
 Route::get("/books/View/{book}", [App\Http\Controllers\Web\HomePageController::class, 'showBook'])->name("book.view");
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
+Route::get('/cart/remove/{book}', CarRemoveController::class)->name('cart.remove');
 
 Auth::routes();
 
