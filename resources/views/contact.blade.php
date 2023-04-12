@@ -39,7 +39,7 @@
                     <div class="flex flex-wrap items-center mb-8">
                         <span class="text-dark text-4xl mr-5"><i class="icon-envelope"></i></span>
                         <a href="mailto:info@example.com" class="flex-1">info@edvisionpublishing.co.tz /
-                            sales@info@edvisionpublishing.co.tz</a>
+                            sales@edvisionpublishing.co.tz</a>
                     </div>
                     <div class="flex flex-wrap items-center">
                         <span class="text-dark text-4xl mr-5"><i class="icon-screen-smartphone"></i></span>

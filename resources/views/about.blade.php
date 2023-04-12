@@ -18,7 +18,7 @@
             </div>
         </div>
     </div>
-    <section class="pt-24 pb-24">
+    <section class="pt-3 pb-24">
         <div class="container">
             <div class="flex items-center -mx-4 flex-wrap">
                 <div class="w-full md:w-1/2 px-4 order-last md:order-first">
@@ -43,6 +43,8 @@
         </div>
     </section>
     <x-web.about.testmonials />
+    <x-web.about.objectives />
+    <x-web.home.objectives />
 
 
     <!-- Feartured section end -->
