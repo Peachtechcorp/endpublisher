@@ -34,12 +34,12 @@
                     <h2 class="font-semibold text-dark text-4xl mb-14 capitalize">Contact Us</h2>
                     <div class="flex flex-wrap items-center mb-8">
                         <span class="text-dark text-4xl mr-5"><i class="icon-location-pin"></i></span>
-                        <p class="flex-1">Dar Es Salaam, Tanzania</p>
+                        <p class="flex-1">Kijitonyama Olga House Plot #44 Off Shekilango Road
+                            P.O Box 4460 Dar es Salaam,Tanzania</p>
                     </div>
                     <div class="flex flex-wrap items-center mb-8">
                         <span class="text-dark text-4xl mr-5"><i class="icon-envelope"></i></span>
-                        <a href="mailto:info@example.com" class="flex-1">info@edvisionpublishing.co.tz /
-                            sales@edvisionpublishing.co.tz</a>
+                        <a href="mailto:info@example.com" class="flex-1">info@edvisionpublishing.co.tz</a>
                     </div>
                     <div class="flex flex-wrap items-center">
                         <span class="text-dark text-4xl mr-5"><i class="icon-screen-smartphone"></i></span>

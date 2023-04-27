@@ -7,7 +7,7 @@
                 <div class="flex items-center -mx-4 flex-wrap">
     
                     <div class="w-full md:w-1/2 px-4">
-                        <span class="text-md font-medium text-orange block mb-4">#END VISION PUBLISHERS</span>
+                        <span class="text-md font-medium text-orange block mb-4">#HOME OF QUALITY BOOKS</span>
                         <h2 class="font-playfair font-bold text-primary text-[30px] sm:text-[36px] xl:text-[48px] leading-tight mb-5">Our Mission<br> & Vision</h2>
     
                         <hr class="w-16 h-1 bg-orange mb-7 border-0">
