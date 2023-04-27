@@ -8,7 +8,7 @@
                         <div class="flex flex-col md:flex-row items-center justify-between w-full">
                             <div class="md:flex-grow">
                                 <div class="slider-content xl:max-w-[580px] 2xl:max-w-[600px]">
-                                    <span class="text-lg font-normal text-orange block mb-3">#END Vision publishers</span>
+                                    <span class="text-lg font-normal text-orange block mb-3">#HOME OF QUALITY BOOKS</span>
                                     <h1 class="font-playfair font-bold text-primary text-3xl sm:text-4xl lg:text-5xl xl:text-8xl 2xl:text-9xl mb-5 inline-block xl:block">All the </h1>
                                     <h2 class="font-playfair font-bold text-primary text-3xl sm:text-4xl lg:text-5xl xl:text-8xl 2xl:text-9xl mb-7 inline-block xl:block">books you want</h2>
                                     {{-- <p class="font-normal text-primary text-sm lg:text-md">

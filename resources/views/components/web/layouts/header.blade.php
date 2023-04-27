@@ -191,9 +191,20 @@
                     <li class="relative block"><a href="/shop"
                             class="relative block capitalize font-normal text-base my-2 py-1 font-roboto">Shop</a>
                     </li>
-                    <li class="relative block"><a href="#"
+                    <li class="main-menu__item relative group "><a href="#"
                             class="relative block capitalize font-normal text-base my-2 py-1 font-roboto">Browse
                             Category</a>
+                            <ul
+                            class="submenu bg-white py-3 px-8 shadow transition-all absolute left-0 top-full opacity-0 group-hover:opacity-100 invisible group-hover:visible group-hover:-translate-y-3 transform z-10 min-w-max">
+                            @foreach ($categories as $category)
+                                <li class="my-3"><a
+                                        class="text-dark font-normal text-base capitalize transition-all hover:text-orange"
+                                        href="{{ route('book.category', ['category' => $category->id]) }}">{{ $category->name }}</a>
+                                </li>
+                            @endforeach
+
+
+                        </ul>
                     </li>
                     <li class="relative block"><a href="/contact"
                             class="relative block capitalize font-normal text-base my-2 py-1 font-roboto">Contact
@@ -205,20 +216,47 @@
 
 
             <nav>
-                <ul id="settings-menu">
-                    <li class="block mb-3">
-                        <a class="flex flex-wrap justify-between mb-3 text-base text-dark hover:text-orange"
-                            href="javascript:void(0)">Account <i class="icon-arrow-down"></i></a>
-                        <ul class="sub-category hidden py-5 px-6 shadow">
-                            <li class="my-2 block"><a
-                                    class="font-light text-sm tracking-wide text-dark block hover:text-orange"
-                                    href="#">Login</a></li>
-                            <li class="my-2 block"><a
-                                    class="font-light text-sm tracking-wide text-dark block hover:text-orange"
-                                    href="#">Register</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                           @if (Route::has('login'))
+                                    <ul class="navbar-nav ms-auto">
+                                        <!-- Authentication Links -->
+                                        @guest
+                                            @if (Route::has('login'))
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                                </li>
+                                            @endif
+
+                                            @if (Route::has('register'))
+                                                <li class="nav-item">
+                                                    <a class="nav-link"
+                                                        href="{{ route('register') }}">{{ __('Register') }}</a>
+                                                </li>
+                                            @endif
+                                        @else
+                                            <li class="nav-item dropdown">
+                                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#"
+                                                    role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false" v-pre>
+                                                    {{ Auth::user()->name }}
+                                                </a>
+
+                                                <div class="dropdown-menu dropdown-menu-end"
+                                                    aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                                        onclick="event.preventDefault();
+                                                                     document.getElementById('logout-form').submit();">
+                                                        {{ __('Logout') }}
+                                                    </a>
+
+                                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                                        class="d-none">
+                                                        @csrf
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        @endguest
+                                    </ul>
+                            @endif
             </nav>
 
         </div>

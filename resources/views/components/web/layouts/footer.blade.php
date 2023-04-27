@@ -62,10 +62,10 @@
 
                     <div class="col-span-6 md:col-span-6 lg:col-span-2 mb-10">
                         <h3 class="text-primary font-bold text-md capitalize leading-none mb-8 font-playfair">
-                            Information</h3>
+                            Menu</h3>
                         <ul>
                             <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all"
-                                    href="#">Terms Condition</a></li>
+                                    href="/about">About us</a></li>
                             <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all"
                                     href="/contact">Contact us</a></li>
                         </ul>
@@ -75,9 +75,9 @@
                             Links</h3>
                         <ul>
                             <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all"
-                                    href="#">Our Office</a></li>
+                                    href="/contact">Our Office</a></li>
                             <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all"
-                                    href="#">Our Store</a></li>
+                                    href="/contact">Our Store</a></li>
                         </ul>
                     </div>
                     <div class="col-span-12 md:col-span-6 lg:col-span-2 mb-10">

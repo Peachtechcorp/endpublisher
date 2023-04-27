@@ -1,7 +1,7 @@
 <div>
     <!-- Smile, breathe, and go slowly. - Thich Nhat Hanh -->
         <!-- testimonial section start -->
-        <div class="testimonial-area bg-gray-light py-24 bg-no-repeat bg-cover bg-center group" style="background-image: url('assets/images/hero/slide5.webp');">
+        <div class="testimonial-area bg-gray-light py-24 bg-no-repeat bg-cover bg-center group" style="background-image: url('{{ asset('images/hero/slide5.webp')}}');">
             <div class="container">
                 <div class="grid grid-cols-12 gap-x-4">
                     <div class="col-span-12">
@@ -16,14 +16,14 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="w-24 h-24 rounded-full mx-auto overflow-hidden">
-                                            <img src="assets/images/testimonial/testimonial1.webp" alt="image">
+                                            <img src="{{ asset('images/testimonial/user.png')}}" alt="image">
                                         </div>
                                         <p class="my-8">I could not believe the variety of books i found here, variety categories and they have everything i needed for my self ,even my kids. Big up END Vision Publishes</p>
                                         <h5 class="font-semibold text-sm text-dark uppercase">Hester Chiwala</h5>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="w-24 h-24 rounded-full mx-auto overflow-hidden">
-                                            <img src="assets/images/testimonial/testimonial1.webp" alt="image">
+                                            <img src="{{ asset('images/testimonial/user.png')}}" alt="image">
                                         </div>
                                         <p class="my-8">END Is a one-stop library and books publishers, collect all the books, Academic ,healthy, self-help books and many mores</p>
                                         <h5 class="font-semibold text-sm text-dark uppercase">Pascal Mayalla</h5>
