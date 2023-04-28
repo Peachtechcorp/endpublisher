@@ -4,7 +4,7 @@
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <!-- swiper-slide start -->
-                    <div class="swiper-slide 2xl:h-screen lg:h-600px flex flex-wrap items-center px-4 md:px-10 2xl:px-24  lg:py-0  bg-no-repeat bg-left-bottom bg-cover" style="background-image: url('assets/images/hero/slide4.webp');">
+                    <div class="swiper-slide 2xl:h-screen lg:h-400px flex flex-wrap items-center px-4 md:px-10 2xl:px-24  lg:py-0  bg-no-repeat bg-left-bottom " style="background-image: url('assets/images/hero/slide4.webp');">
                         <div class="flex flex-col md:flex-row items-center justify-between w-full">
                             <div class="md:flex-grow">
                                 <div class="slider-content xl:max-w-[580px] 2xl:max-w-[600px]">
@@ -22,7 +22,7 @@
                             </div>
 
                             <div class="md:flex-shrink mt-10 md:mt-0">
-                                <img class="sm:max-w-sm mx-auto lg:max-w-lg xl:max-w-full" src="{{ asset('images/hero/sm/slider1.png')}} " alt="image" loading="lazy" width="570" height="570">
+                                <img class="sm:max-w-sm mx-auto lg:max-w-lg xl:max-w-full" src="{{ asset('images/hero/sm/slider1.png')}} " alt="image" loading="lazy" width="570" height="400">
                             </div>
                         </div>
                     </div>

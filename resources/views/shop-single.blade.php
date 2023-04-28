@@ -25,7 +25,7 @@
         <!-- Hero section end -->
 
 
-        <div class="py-24">
+        <div class="py-5">
             <div class="container">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
                     <div>
@@ -34,7 +34,7 @@
                                 class="font-semibold uppercase text-sm text-white inline-block py-1 px-2 leading-none absolute top-3  z-10 right-3 bg-orange">Sale</span>
                             <div class="gallery mb-6">
                                 <div class="swiper-slide">
-                                    <img src="{{ $book->featured_image }}" alt="product image">
+                                    <img src="{{ $book->featured_image }}" alt="product image" width="800" height="900">
                                 </div>
                             </div>
 
@@ -49,13 +49,7 @@
                         <div class="mb-3">ISBN:<span>{{ $book->isbn }}</span></div>
                         <div class="mb-3"><span>Availability:</span> <span class="font-semibold">9 left in stock</span>
                         </div>
-                        <p class="mb-8">{{ $book->description }}.</p>
-
                         <div>
-
-
-
-
                             <div class="mb-8">
                                 <div class="flex flex-wrap items-center mt-8">
                                     <div class="flex count border border-solid border-gray-300 p-2 h-11">
@@ -117,6 +111,23 @@
                 </div>
             </div>
 
+        </div>
+
+        <div id="maintab" class="pb-5">
+            <div class="container">
+                <div class="grid grid-cols-1 gap-x-5">
+                    <div class="border border-solid border-gray-300 p-8">
+                        <ul class="custom-tab-nav flex flex-wrap items-center mb-10 -mx-5 -my-1">
+                            <li class="mx-5 my-1"><a class="pb-3 leading-none capitalize transition-all hover:text-orange text-base sm:text-md before:absolute before:left-auto before:right-0 before:bottom-0 before:w-0 before:h-2px before:empty before:bg-orange relative before:transition-all ease-out" href="#description">Description</a></li>
+                        </ul>
+                        <div id="description" class="custom-tab-content">
+                            <div>
+                                <p class="mb-8">{{ $book->description }}.</p>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <x-web.shop-single.similar-products />
     </div>

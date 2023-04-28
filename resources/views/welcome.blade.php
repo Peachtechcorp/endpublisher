@@ -34,9 +34,9 @@
                                                                 class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
                                                             <span
                                                                 class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
-                                                            <img class="w-full h-full" src="{{ $book->featured_image }} "
-                                                                alt="product image" loading="lazy" width="432"
-                                                                height="480" />
+                                                            <img class="" src="{{ $book->featured_image }} "
+                                                                alt="product image" loading="lazy" width="216"
+                                                                height="240" />
                                                             <!-- actions start -->
 
                                                             <div

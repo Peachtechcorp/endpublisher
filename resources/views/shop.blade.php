@@ -58,21 +58,17 @@
                             </div>
                             <div>
                                 <ul class="shop-tab-nav flex flex-wrap">
-                                    <li><a href="#grid" class="text-base hover:text-orange inline-block py-2 px-2"><i
-                                                class="icon-grid"></i></a></li>
-                                    <li class="active"><a href="#list"
-                                            class="text-base hover:text-orange inline-block py-2 px-2 ml-5"><i
-                                                class="icon-menu"></i></a></li>
+                                    <li class="active">
+                                        <a href="#grid" class="text-base hover:text-orange inline-block py-2 px-2"><i class="icon-grid"></i></a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="mt-10">
-                            <div id="grid" class="shop-tab-content">
+                            <div id="grid" class="shop-tab-content active">
                                 <div class="flex flex-wrap -my-4 -px-4">
-
-
                                     @foreach ($books as $book)
-                                        <div class="w-full md:w-1/2 lg:w-1/3 2xl:w-1/4 px-4 my-4">
+                                        <div class="w-1/2 md:w-1/2 lg:w-1/3 2xl:w-1/4 px-4 my-4">
                                             <div
                                                 class="border border-solid border-gray-300 transition-all hover:shadow-product group">
                                                 <div class="relative overflow-hidden">
@@ -80,10 +76,8 @@
                                                         class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 left-3">New</span>
                                                     <span
                                                         class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3">Sale</span>
-                                                    <span
-                                                        class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
-                                                    <img class="w-full h-full" src="{{ $book->featured_image }} "
-                                                        alt="product image" loading="lazy" width="432" height="480" />
+                                                    <span  class="font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3">-11%</span>
+                                                    <img class="" src="{{ $book->featured_image }} "  alt="product image" loading="lazy" width="432" height="480" />
                                                     <!-- actions start -->
 
                                                     <div
@@ -106,7 +100,7 @@
 
                                                 <div class="py-5 px-4">
                                                     <h3><a class="block text-base hover:text-orange transition-all"
-                                                            href="#">{{ $book->name }}</a></h3>
+                                                            href="{{ route('book.view', ['book' => $book]) }}">{{ $book->name }}</a></h3>
                                                     <h4 class="font-bold text-md leading-none text-orange mt-3">
                                                         TSH:{{ $book->price }}
                                                     </h4>
@@ -124,7 +118,7 @@
 
 
                             </div>
-                            <div id="list" class="shop-tab-content active">
+                            {{-- <div id="list" class="shop-tab-content active">
                                 <div class="flex flex-wrap -mb-7 -px-4">
                                     @foreach ($books as $book)
                                         <div class="w-full px-4 mb-7">
@@ -132,15 +126,13 @@
                                                 class="border border-solid border-gray-300 transition-all hover:shadow-product group relative flex flex-wrap flex-col md:flex-row">
                                                 <div class="relative overflow-hidden md:w-1/3">
 
-                                                    <img class="md:absolute w-full md:h-full md:object-cover"
+                                                    <img class="md:absolute "
                                                         src="{{ $book->featured_image }} " alt="product image"
                                                         loading="lazy" width="432" height="480" />
                                                     <!-- actions start -->
 
-                                                    <div
-                                                        class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
-                                                        <ul
-                                                            class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
+                                                    <div class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10">
+                                                        <ul class="flex items-center justify-center bg-white shadow opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all ease-linear transform translate-y-4 group-hover:-translate-y-0">
                                                         </ul>
                                                     </div>
 
@@ -198,7 +190,7 @@
 
 
 
-                            </div>
+                            </div> --}}
                         </div>
 
                         <div class="mt-10">
