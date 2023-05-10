@@ -3,47 +3,66 @@
 
         <!-- Featured section start -->
 
-        <section class="pt-5 pb-24">
+        <div class="pt-5">
             <div class="container">
-                <div class="lg:grid lg:grid-cols-2 gap-4">
-    
-                    <div class="lg:px-5 flex items-center mb-8 md:mb-0">
-                        <img class="aspect-auto" src="{{ asset('images/bags/png2.png')}} " alt="product image" loading="lazy" width="774" height="884" />
+                <div class="grid grid-rows-1 grid-flow-col gap-x-4">
+                    <div class="text-center mb-14">
+                        <h2 class="font-playfair font-bold text-3xl text-primary md:text-4xl lg:text-xl">Objectives</h2>
                     </div>
-    
-                    <div class="lg:px-5">
-                        <h2 class="font-playfair font-bold text-primary text-3xl xl:text-xl mb-5 leading-tight">Our Objectives</h2>
-                        <p class="font-normal text-primary text-base">
-                            The overall objective of the Agency is to contribute to the creation of an informed, inspired, learning and empowered society through readership promotion; specifically:
-                        </p>
-    
-                        <div class="mt-10 -mb-10">
-                            <div class="flex flex-wrap mb-10 items-center">
-                                <div class="flex-1">
-                                    <h3 class="text-primary font-medium text-md lg:text-lg capitalize mb-3">Deveop & Initiate</h3>
-                                    <p>To develop and initiate projects which will promote readership
-                                        among children and the community at large;</p>
+                </div>
+                <div class="grid grid-cols-12 gap-4">
+                    <div class="col-span-12">
+                        <section class="relative -m-4">
+                            <div class="service-carousel overflow-hidden p-4">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <!-- swiper-slide start -->
+                                        <div class="swiper-slide">
+                                            <div class="text-center">
+                                                <h3><a href="#" class="block text-base md:text-md hover:text-orange transition-all font-medium">Develop & Initiate</a></h3>
+                                                <p class="font-normal text-black text-sm mb-4">To develop and initiate projects which will promote readership among children and the community at large</p>
+                                            </div>
+                                        </div>
+                                        <!-- swiper-slide end-->
+                                        <!-- swiper-slide start -->
+                                        <div class="swiper-slide">
+                                            <div class="text-center">
+                                                <h3><a href="#" class="block text-base md:text-md hover:text-orange transition-all font-medium">Stimulate & promote</a></h3>
+                                                <p class="font-normal text-black text-sm mb-4">To stimulate, promote and support creation of readership talents</p>
+                                            </div>
+                                        </div>
+                                        <!-- swiper-slide end-->
+                                        <!-- swiper-slide start -->
+                                        <div class="swiper-slide">
+                                            <div class="text-center">
+                                                <h3><a href="#" class="block text-base md:text-md hover:text-orange transition-all font-medium">Facilitate</a></h3>
+                                                <p class="font-normal text-black text-sm mb-4">To facilitate the establishment of book and reading clubs, libraries and book centers in order to develop readership skills of young people and professionals;</p>
+                                            </div>
+                                        </div>
+                                        <!-- swiper-slide end-->
+                                    </div>
+                                </div>
+        
+                                <!-- Add Pagination -->
+        
+                                <!-- <div class="swiper-pagination"></div> -->
+        
+                                <!-- swiper navigation -->
+        
+                                <div class="swiper-buttons">
+                                    <div class="swiper-button-prev right-auto left-2 md:-left-2  w-12 h-12 rounded-full bg-white border border-solid border-gray-600 text-sm text-dark opacity-100 transition-all hover:text-orange hover:border-orange"></div>
+                                    <div class="swiper-button-next left-auto right-2 md:-right-2  w-12 h-12 rounded-full bg-white border border-solid border-gray-600 text-sm text-dark opacity-100 transition-all hover:text-orange hover:border-orange"></div>
                                 </div>
                             </div>
-                            <div class="flex flex-wrap mb-10 items-center">
-                                <div class="flex-1">
-                                    <h3 class="text-primary font-medium text-md lg:text-lg capitalize mb-3">Stimulate, promote</h3>
-                                    <p>To stimulate, promote and support creation of readership talents</p>
-                                </div>
-                            </div>
-                            <div class="flex flex-wrap mb-10 items-center">
-                                <div class="flex-1">
-                                    <h3 class="text-primary font-medium text-md lg:text-lg capitalize mb-3">Facilitate</h3>
-                                    <p>To facilitate the establishment of book and reading clubs,
-                                        libraries and book centers in order to develop readership skills
-                                        of young people and professionals;</p>
-                                </div>
-                            </div>
-                        </div>
+                        </section>
+        
+        
+        
+        
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     
     
         <!-- Featured section end -->

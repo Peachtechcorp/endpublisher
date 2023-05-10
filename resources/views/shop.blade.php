@@ -8,7 +8,7 @@
                     <div class="col-span-12">
                         <nav>
                             <ul class="flex flex-wrap items-center justify-center">
-                                <li class="mr-5"><a href="index.html"
+                                <li class="mr-5"><a href="/"
                                         class="text-dark font-medium text-base uppercase transition-all hover:text-orange relative before:w-5 before:h-1px before:empty before:absolute before:top-3 before:bg-dark before:transform before:rotate-115 before:-right-5">Home</a>
                                 </li>
                                 <li class="text-dark font-medium text-base uppercase mr-5">Shop</li>
@@ -32,9 +32,9 @@
                     <div id="shoptab" class="flex-1 px-4">
                         <div class="flex flex-wrap justify-between items-center">
                             <div class="flex flex-wrap">
-                                <div class="shop-select flex mr-12">
-                                    <label for="SortBy">Sort by :</label>
-                                    <select id="SortBy" class="px-2 bg-transparent">
+                                <div class="shop-select flex mr-12 ">
+                                    <label for="SortBy mr-3">Sort by :</label>
+                                    <select id="SortBy" class="px-2 bg-transparent border border-solid border-gray-500">
                                         <option value="manual">Featured</option>
                                         <option value="best-selling">Best Selling</option>
                                         <option value="title-ascending">Alphabetically, A-Z</option>
@@ -45,11 +45,11 @@
                                         <option value="created-ascending">Date, old to new</option>
                                     </select>
                                 </div>
-                                <p class="my-2 sm:my-0">Showing {{ $books->links() }} result</p>
+                                {{-- <p class="my-2 sm:my-0">Showing {{ $books->links() }} result</p> --}}
                             </div>
                             <div>
                                 <span>Show :</span>
-                                <select class="bg-transparent">
+                                <select class="bg-transparent border border-solid border-gray-500">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>

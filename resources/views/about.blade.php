@@ -8,7 +8,7 @@
                 <div class="col-span-12">
                     <nav>
                         <ul class="flex flex-wrap items-center justify-center">
-                            <li class="mr-5"><a href="index.html"
+                            <li class="mr-5"><a href="/"
                                     class="text-dark font-medium text-base uppercase transition-all hover:text-orange relative before:w-5 before:h-1px before:empty before:absolute before:top-3 before:bg-dark before:transform before:rotate-115 before:-right-5">Home</a>
                             </li>
                             <li class="text-dark font-medium text-base uppercase mr-5">about us</li>
@@ -42,9 +42,10 @@
             </div>
         </div>
     </section>
-    <x-web.about.testmonials />
-    <x-web.about.objectives />
+    <x-web.home.mission />
+    {{-- <x-web.about.testmonials /> --}}
     <x-web.home.objectives />
+    <x-web.about.objectives />
 
 
     <!-- Feartured section end -->

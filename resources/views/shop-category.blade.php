@@ -8,10 +8,9 @@
                     <div class="col-span-12">
                         <nav>
                             <ul class="flex flex-wrap items-center justify-center">
-                                <li class="mr-5"><a href="index.html"
-                                        class="text-dark font-medium text-base uppercase transition-all hover:text-orange relative before:w-5 before:h-1px before:empty before:absolute before:top-3 before:bg-dark before:transform before:rotate-115 before:-right-5">Home</a>
+                                <li class="mr-5"><a href="/"
+                                 class="text-dark font-medium text-base uppercase transition-all hover:text-orange relative before:w-5  before:empty before:absolute before:top-3 before:bg-dark ">Home</a>
                                 </li>
-                                <li class="text-dark font-medium text-base uppercase mr-5">shop-grid-4-column</li>
                             </ul>
                         </nav>
                     </div>
@@ -57,17 +56,14 @@
                             </div>
                             <div>
                                 <ul class="shop-tab-nav flex flex-wrap">
-                                    <li><a href="#grid" class="text-base hover:text-orange inline-block py-2 px-2"><i
+                                    <li class="active"><a href="#grid" class="text-base hover:text-orange inline-block py-2 px-2"><i
                                                 class="icon-grid"></i></a></li>
-                                    <li class="active"><a href="#list"
-                                            class="text-base hover:text-orange inline-block py-2 px-2 ml-5"><i
-                                                class="icon-menu"></i></a></li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="mt-10">
-                            <div id="grid" class="shop-tab-content">
+                            <div id="grid" class="shop-tab-content active">
                                 <div class="flex flex-wrap -my-4 -px-4">
 
                                     @foreach ($categories->books as $book)
@@ -149,7 +145,7 @@
 
 
                             </div>
-                            <div id="list" class="shop-tab-content active">
+                            {{-- <div id="list" class="shop-tab-content active">
                                 <div class="flex flex-wrap -mb-7 -px-4">
                                     @foreach ($categories->books as $book)
                                         <div class="w-full px-4 mb-7">
@@ -221,7 +217,7 @@
 
 
 
-                            </div>
+                            </div> --}}
                         </div>
 
                         <div class="mt-12">

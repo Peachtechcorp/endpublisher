@@ -10,7 +10,7 @@
                     <div class="col-span-12">
                         <nav>
                             <ul class="flex flex-wrap items-center justify-center">
-                                <li class="mr-5"><a href="index.html"
+                                <li class="mr-5"><a href="/"
                                         class="text-dark font-medium text-base uppercase transition-all hover:text-orange relative before:w-5 before:h-1px before:empty before:absolute before:top-3 before:bg-dark before:transform before:rotate-115 before:-right-5">Home</a>
                                 </li>
                                 <li class="text-dark font-medium text-base uppercase mr-5">{{ $book->name }}</li>
@@ -88,21 +88,6 @@
                                         class="icon-social-youtube"></i></a>
                                 <div>
                                 </div>
-                            </div>
-
-                            <div class="flex flex-wrap">
-                                <a href="#" class="mr-2"><img src="{{ asset('images/payment/amazon.svg') }}"
-                                        alt="payment icon"></a>
-                                <a href="#" class="mr-2"><img src="{{ asset('images/payment/apple-pay.svg') }}"
-                                        alt="payment icon"></a>
-                                <a href="#" class="mr-2"><img src="{{ asset('images/payment/bitcoin.svg') }}"
-                                        alt="payment icon"></a>
-                                <a href="#" class="mr-2"><img src="{{ asset('images/payment/google-pay.svg') }}"
-                                        alt="payment icon"></a>
-                                <a href="#" class="mr-2"><img src="{{ asset('images/payment/paypal.svg') }}"
-                                        alt="payment icon"></a>
-                                <a href="#" class="mr-2"><img src="{{ asset('images/payment/visa.svg') }}"
-                                        alt="payment icon"></a>
                             </div>
 
                         </div>

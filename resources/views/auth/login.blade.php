@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="home-btn d-none d-sm-block">
-        <!-- <a href="index.html"><i class="fas fa-home h2 text-dark"></i></a> -->
+        <!-- <a href="/"><i class="fas fa-home h2 text-dark"></i></a> -->
     </div>
     <div class="account-pages my-5">
         <div class="container">
@@ -13,7 +13,7 @@
                         <div class="card-body p-4">
 
                             <div class="text-center w-75 m-auto">
-                                <a href="index.html">
+                                <a href="/">
                                     <span><img src="{{ asset('admin/images/logo-dark.png') }}assets/" alt=""
                                             height="22"></span>
                                 </a>

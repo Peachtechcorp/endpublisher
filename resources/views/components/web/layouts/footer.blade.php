@@ -41,7 +41,7 @@
 
                 <div class="grid grid-cols-12 gap-4">
                     <div class="col-span-12 md:col-span-6 lg:col-span-6 mb-10">
-                        <a href="index.html" class="inline-block mb-4"><img src="{{ asset('images/logo/logo.png') }} "
+                        <a href="/" class="inline-block mb-4"><img src="{{ asset('images/logo/logo.png') }} "
                                 alt="logo" loading="lazy" width="125" height="45" /></a>
                         <p class="mb-8">We aim to give our community the chance to read and succeed. We provide proven
                             programs to ensure our community discovers the joy of books, develop critical emergent
@@ -105,13 +105,6 @@
                     <div class="flex order-last md:order-first flex-wrap items-center justify-center md:justify-start">
                         <p class="text-white flex flex-wrap items-center text-sm lg:text-base">&copy; 2023 END Vision
                             Publishers.</p>
-                    </div>
-
-                    <div class="flex flex-wrap items-center justify-center md:justify-end">
-                        <a href="#">
-                            <img class="w-full h-full" src="{{ asset('images/logo/payment.webp') }} " alt="payment logo"
-                                loading="lazy" width="286" height="23" />
-                        </a>
                     </div>
                 </div>
 
