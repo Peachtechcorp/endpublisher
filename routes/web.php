@@ -39,6 +39,10 @@ Route::get('/about', function () {
     return view('about');
 });
 
+Route::get('/terms', function () {
+    return view('terms');
+});
+
 
 Route::get("/", [App\Http\Controllers\Web\HomePageController::class, 'index'])->name('welcome');
 Route::get("/cart", [App\Http\Controllers\Web\HomePageController::class, 'cart'])->name("cart");

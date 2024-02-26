@@ -68,6 +68,8 @@
                                     href="/about">About us</a></li>
                             <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all"
                                     href="/contact">Contact us</a></li>
+                                    <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all"
+                                    href="/shop">Shop</a></li>
                         </ul>
                     </div>
                     <div class="col-span-6 md:col-span-6 lg:col-span-2 mb-10">
@@ -75,19 +77,15 @@
                             Links</h3>
                         <ul>
                             <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all"
-                                    href="/contact">Our Office</a></li>
-                            <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all"
-                                    href="/contact">Our Store</a></li>
+                                    href="/terms">Terms & Conditions</a></li>
+
                         </ul>
                     </div>
                     <div class="col-span-12 md:col-span-6 lg:col-span-2 mb-10">
                         <h3 class="text-primary font-bold text-md capitalize leading-none mb-8 font-playfair">Our
                             Branches</h3>
                         <ul>
-                            <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all"
-                                    href="#">Dar es Salaam</a></li>
-                            <li class="ml-4 mb-5 list-circle"><a class="hover:text-orange transition-all"
-                                    href="#">Tanzania</a></li>
+                            <li class="ml-4 mb-5 list-circle">Kijitonyama Olga House Plot #44 <br />Dar es Salaam</li>
                         </ul>
                     </div>
                 </div>

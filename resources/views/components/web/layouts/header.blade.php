@@ -71,8 +71,8 @@
 
                         <li id="toggle-menu" class="ml-6 hidden lg:block relative">
                             <button class="text-primary text-md hover:text-orange transition-all toggle-menu"
-                                aria-label="icon-settings">
-                                <i class="icon-settings"></i>
+                                aria-label="icon-user">
+                                <i class="icon-user"></i>
                             </button>
                             @if (Route::has('login'))
                                 <div id="settings-card"
