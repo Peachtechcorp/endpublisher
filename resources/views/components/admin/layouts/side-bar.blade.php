@@ -30,12 +30,7 @@
                                     <span> Categories </span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="{{ route('products.index') }}">
-                                    <i class="fe-briefcase"></i>
-                                    <span> Products </span>
-                                </a>
-                            </li>
+                          
                             <li>
                                 <a href=" {{ route('books.index') }} ">
                                     <i class="fe-type"></i>

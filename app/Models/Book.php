@@ -15,13 +15,9 @@ class Book extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'name', 'description', 'author', 'year_published', 'isbn', 'pages', 'price', 'featured_image', 'product_id'
+        'name', 'description', 'author', 'year_published', 'isbn', 'pages', 'price', 'featured_image',
     ];
 
-    public function books()
-    {
-        return $this->belongsTo(Product::class, 'product_id');
-    }
 
     public function categoryies(): BelongsToMany
     {

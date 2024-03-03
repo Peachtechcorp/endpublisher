@@ -49,16 +49,7 @@
                                         @endisset
 
                                         <div class="form-group row">
-                                            <div class="col-sm">
-                                                <strong>Select Product Category:</strong>
-                                                <select name="product_id" class="form-control" required>
-                                                    @foreach ($products as $product)
-                                                        <option value={{ isset($book) ? $book->product_id : $product->id }}>
-                                                            {{ $product->name }}</option>
-                                                    @endforeach
-                                                </select>
-
-                                            </div>
+                                            
                                             <div class="col-sm">
                                                 <strong>Name:</strong>
                                                 <input name="name" type="text" class="form-control"

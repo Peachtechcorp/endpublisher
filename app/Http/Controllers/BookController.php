@@ -30,10 +30,9 @@ class BookController extends Controller
      */
     public function create()
     {
-        $products = Product::all();
         $categories = Category::all();
         $brands = Brand::all();
-        return view('admin.books.create', compact('products', 'brands', 'categories'));
+        return view('admin.books.create', compact('brands', 'categories'));
     }
 
     /**
