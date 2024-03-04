@@ -4,15 +4,12 @@ use App\Http\Controllers\BookController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\Cart\ShopCartController;
 use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Inv\AssignBrandController;
 use App\Http\Controllers\Inv\AssignCategoryController;
 use App\Http\Controllers\Inv\CarRemoveController;
 use App\Http\Controllers\Inv\ContactEmail;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\OrderItemController;
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\Web\HomePageController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -67,7 +64,6 @@ Route::middleware("auth")->group(function () {
     Route::resource('brands', BrandController::class);
     Route::resource('books', BookController::class);
     Route::resource('orders', OrderController::class);
-    Route::resource('products', ProductController::class);
     Route::resource('categories', CategoryController::class);
     Route::post("books/{book}/assign-category", AssignCategoryController::class)->name("books.assign-category");
     ROute::post("books/{book}/assign-brand", AssignBrandController::class)->name("books.assign-brand");

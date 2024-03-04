@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('items', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger("order_item_id");
-            $table->unsignedBigInteger("product_id");
             $table->decimal("price");
             $table->decimal("quantity");
             $table->softDeletes();
