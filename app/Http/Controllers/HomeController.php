@@ -36,9 +36,9 @@ class HomeController extends Controller
 
             $books = Book::count();
             $categories = Category::count();
-            $products = Product::count();
+           // $products = Product::count();
             $orders = OrderItem::count();
-            return view('/home', compact('books', 'categories', 'products', 'orders'));
+            return view('/home', compact('books', 'categories', 'orders'));
         } else {
             return view('/welcome');
         }
