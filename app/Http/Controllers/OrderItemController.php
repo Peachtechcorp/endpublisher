@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Helpers\SelcomPayment;
 use App\Models\Order\Item;
 use App\Models\Order\OrderItem;
 use Carbon\Carbon;
@@ -52,22 +53,19 @@ class OrderItemController extends Controller
             'user_id' => $request->input("user_id"),
             'total' => $request->input('total'),
         ]);
-
         $order->save();
-
         foreach ($request->input("order_items") as $item) {
-            $order->items()->create(collect($item)->merge([
+            $item = collect($item)->merge([
                 "user_id" => $request->input("user_id"),
-            ])->toArray());
+            ])->toArray();
+            $order->items()->create($item);
         }
         DB::commit();
         $request->session()->forget('cart');
         $request->session()->forget('total');
+        $request->merge(['payable' => $order->id, 'amount' => $order->total]);
+        dd(SelcomPayment::createPayment($request));
         return redirect(route('cart'));
-
-
-
-
         //dd($date);
     }
 
